@@ -169,3 +169,8 @@
   .hp-footer-icons {
       color: #a7a7a7;
   }
+  
+  .hp-footer-left-side {
+      width: 35%;
+      align-items: center;
+  }
