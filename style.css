@@ -48,3 +48,13 @@
                    .appleIcon {
                        color: white;
                    }
+
+                   #login-with .login-with-items{
+                    width: 100%;
+                   }
+
+                   #login-with .login-with-items a{
+                       text-decoration: none;
+                       color: #fff;
+                       font-weight: 600;
+                   }
