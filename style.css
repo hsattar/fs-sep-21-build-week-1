@@ -1,14 +1,20 @@
 :root {
   --light-green: #1ed760;
-  --light-black: #3e3e3e;
+  --light-black: #2a2a2a;
+  --dark-black: #121212;
   --black: #1e1e1e;
+  --light-gray: #b3b3b3;
 }
 
 body {
-  background-color: var(--light-black);
+  background-color: var(--dark-black);
   color: white;
 }
 
 .light-green-text {
   color: var(--light-green);
+}
+
+.light-gray-text {
+  color: var(--light-gray);
 }
