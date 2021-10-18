@@ -55,16 +55,16 @@ for (let i = 0; i < albumSongs.length; i++) {
     songRow.innerHTML = `
     <div class="row">
                     
-        <div class="col-1">
+        <div class="col-1 light-gray-text">
             <p>${i + 1}</p>
         </div>
 
         <div class="col-10">
-            <p class="my-1 font-weight-bold">${albumSongs[i].title}</p>
-            <p class="my-1 smaller-text">${albumSongs[i].artist}</p>
+            <p class="my-0 font-weight-bold">${albumSongs[i].title}</p>
+            <p class="mt-0 mb-2 smaller-text light-gray-text">${albumSongs[i].artist}</p>
         </div>
 
-        <div class="col-1">
+        <div class="col-1 light-gray-text">
             <p>${albumSongs[i].duration}</p>
         </div>
     

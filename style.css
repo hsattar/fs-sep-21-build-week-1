@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: var(--dark-black);
+  background-color: var(--light-black);
   color: white;
 }
 
@@ -17,4 +17,13 @@ body {
 
 .light-gray-text {
   color: var(--light-gray);
+}
+
+.divider {
+  border-top: 1px solid var(--light-gray);
+  display: block;
+  line-height: 1px;
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
 }

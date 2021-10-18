@@ -19,3 +19,21 @@
 .album-action-icons .bi-play-circle-fill {
   color: var(--light-green);
 }
+
+.divider {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bg-wrapper {
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(42, 42, 42, 1) 48%,
+    rgba(42, 42, 42, 1) 68%,
+    rgba(104, 22, 76, 1) 100%,
+    rgba(148, 8, 100, 1) 100%,
+    rgba(148, 8, 100, 1) 100%
+  );
+}

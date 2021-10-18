@@ -13,11 +13,6 @@ body {
   margin: 0 auto;
 }
 
-footer p {
-  text-align: center;
-  font-size: 0.75rem;
-}
-
 .h5 {
   font-size: small;
   font-weight: bold;
@@ -58,14 +53,6 @@ footer p {
   font-weight: 600;
 }
 
-:root {
-  --light-green: #1ed760;
-}
-
-.light-green-text {
-  color: var(--light-green);
-}
-
 .login-wrapper {
   max-width: 500px;
   margin: 0 auto;
@@ -74,45 +61,6 @@ footer p {
 footer p {
   text-align: center;
   font-size: 0.75rem;
-}
-
-.btn1 {
-  font-size: 14px;
-  padding: 16px 14px 18px;
-}
-
-.btn-facebook {
-  font-size: 14px;
-  min-width: 350px;
-  padding-top: 14px;
-  color: white;
-  background-color: #3b5998;
-}
-
-.btn-apple {
-  font-size: 14px;
-  min-width: 350px;
-  padding-top: 14px;
-  color: white;
-  background-color: #000000;
-}
-
-.facebookIcon {
-  color: #3b5998;
-}
-
-.appleIcon {
-  color: white;
-}
-
-#login-with .login-with-items {
-  width: 100%;
-}
-
-#login-with .login-with-items a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
 }
 
 .btn-signup {
@@ -133,15 +81,6 @@ footer p {
 .content {
   max-width: 450px;
   margin: auto;
-}
-
-.divider {
-  border-top: 1px solid #d9dadc;
-  display: block;
-  line-height: 1px;
-  margin: 15px 0;
-  position: relative;
-  text-align: center;
 }
 
 .divider-title {
