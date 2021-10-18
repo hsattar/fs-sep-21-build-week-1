@@ -1,76 +1,134 @@
-                    .login-logo{
+                    .login-logo {
                         margin-top: 30px;
                         margin-bottom: 30px;
                     }
-                    :root {
-                       --light-green: #1ed760;
-                   }
-                   
-                   .light-green-text {
-                       color: var(--light-green);
-                   }
-                   
-                   .login-wrapper {
-                       max-width: 500px;
-                       margin: 0 auto;
-                   }
-                   
-                   footer p {
-                       text-align: center;
-                       font-size: 0.75rem;
-                   }
-                   
-                   .btn1 {
-                       font-size: 14px;
-                       padding: 16px 14px 18px;
-                   }
-                   
-                   .btn-facebook {
-                       font-size: 14px;
-                       min-width: 350px;
-                       padding-top: 14px;
-                       color: white;
-                       background-color: #3b5998;
-                   }
-                   
-                   .btn-apple {
-                       font-size: 14px;
-                       min-width: 350px;
-                       padding-top: 14px;
-                       color: white;
-                       background-color: #000000;
-                   }
-                   
-                   .facebookIcon {
-                       color: #3b5998;
-                   }
-                   
-                   .appleIcon {
-                       color: white;
-                   }
-
-                   #login-with .login-with-items{
-                    width: 100%;
-                   }
-
-                   #login-with .login-with-items a{
-                       text-decoration: none;
-                       color: #fff;
-                       font-weight: 600;
-                   }
-.btn-signup {
-    font-size: 14px;
-    min-width: 350px;
-    padding-top: 14px;
-    color: #616467;
-    background-color:white;
-    border-radius: 25px;
-    border: 2px solid #616467;
-    
-    
-}
-
-.btn-signup:hover{
-    background-color:#616467 ;
-    color: white;
-}
+                    
+                     :root {
+                        --light-green: #1ed760;
+                    }
+                    
+                    .light-green-text {
+                        color: var(--light-green);
+                    }
+                    
+                    .login-wrapper {
+                        max-width: 500px;
+                        margin: 0 auto;
+                    }
+                    
+                    footer p {
+                        text-align: center;
+                        font-size: 0.75rem;
+                    }
+                    
+                    .h5 {
+                        font-size: small;
+                        font-weight: bold;
+                    }
+                    
+                    .btn1 {
+                        font-size: 14px;
+                        letter-spacing: .2rem;
+                        min-width: 350px;
+                        color: white;
+                        max-height: 45px;
+                        padding: 12px 14px 16px;
+                    }
+                    
+                    .btn-facebook {
+                        background-color: #3b5998;
+                    }
+                    
+                    .btn-apple {
+                        background-color: #000000;
+                    }
+                    
+                    .facebookIcon {
+                        color: #3b5998;
+                    }
+                    
+                    .appleIcon {
+                        color: white;
+                    }
+                    
+                    #login-with .login-with-items {
+                        width: 100%;
+                    }
+                    
+                    #login-with .login-with-items a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    
+                     :root {
+                        --light-green: #1ed760;
+                    }
+                    
+                    .light-green-text {
+                        color: var(--light-green);
+                    }
+                    
+                    .login-wrapper {
+                        max-width: 500px;
+                        margin: 0 auto;
+                    }
+                    
+                    footer p {
+                        text-align: center;
+                        font-size: 0.75rem;
+                    }
+                    
+                    .btn1 {
+                        font-size: 14px;
+                        padding: 16px 14px 18px;
+                    }
+                    
+                    .btn-facebook {
+                        font-size: 14px;
+                        min-width: 350px;
+                        padding-top: 14px;
+                        color: white;
+                        background-color: #3b5998;
+                    }
+                    
+                    .btn-apple {
+                        font-size: 14px;
+                        min-width: 350px;
+                        padding-top: 14px;
+                        color: white;
+                        background-color: #000000;
+                    }
+                    
+                    .facebookIcon {
+                        color: #3b5998;
+                    }
+                    
+                    .appleIcon {
+                        color: white;
+                    }
+                    
+                    #login-with .login-with-items {
+                        width: 100%;
+                    }
+                    
+                    #login-with .login-with-items a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    
+                    .btn-signup {
+                        font-size: 14px;
+                        min-width: 350px;
+                        padding-top: 14px;
+                        color: #616467;
+                        background-color: white;
+                        border-radius: 25px;
+                        border: 2px solid #616467;
+                    }
+                    
+                    .btn-signup:hover {
+                        background-color: #616467;
+                        color: white;
+                    }
