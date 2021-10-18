@@ -1,37 +1,46 @@
-                 :root {
-                --light-green: #1ed760;
-            }
-            
-            .light-green-text {
-                color: var(--light-green);
-            }
-            
-            .login-wrapper {
-                max-width: 500px;
-                margin: 0 auto;
-            }
-            
-            footer p {
-                text-align: center;
-                font-size: 0.75rem;
-            }
-            
-            .btn1 {
-                font-size: 14px;
-                padding: 16px 14px 18px;
-            }
-            
-            .btn-facebook {
-                font-size: 14px;
-                min-width: 350px;
-                padding-top: 14px;
-                color: white;
-                background-color: #3b5998;
-            }
-            
-            .btn-apple {
-                font-size: 14px;
-                min-width: 350px;
-                padding-top: 14px;
-                color: white;
-                background-color: #000000;
+                   :root {
+                      --light-green: #1ed760;
+                  }
+                  
+                  .light-green-text {
+                      color: var(--light-green);
+                  }
+                  
+                  .login-wrapper {
+                      max-width: 500px;
+                      margin: 0 auto;
+                  }
+                  
+                  footer p {
+                      text-align: center;
+                      font-size: 0.75rem;
+                  }
+                  
+                  .btn1 {
+                      font-size: 14px;
+                      padding: 16px 14px 18px;
+                  }
+                  
+                  .btn-facebook {
+                      font-size: 14px;
+                      min-width: 350px;
+                      padding-top: 14px;
+                      color: white;
+                      background-color: #3b5998;
+                  }
+                  
+                  .btn-apple {
+                      font-size: 14px;
+                      min-width: 350px;
+                      padding-top: 14px;
+                      color: white;
+                      background-color: #000000;
+                  }
+                  
+                  .facebookIcon {
+                      color: #3b5998;
+                  }
+                  
+                  .appleIcon {
+                      color: white;
+                  }
