@@ -172,18 +172,33 @@ div.triangle {
   background-color: var(--black);
 }
 
-.side-barimg {
+.side-bar img {
   margin-top: 15px;
 }
 
-.sidebar-btn {
-  width: 100%;
-  margin-left: 10px;
-  font-size: 20px;
+.side-bar a {
+  color: var(--light-gray);
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
 }
 
-.side-bar > p {
-  margin-left: 15px;
+.side-bar a.selected {
+  background-color: var(--light-gray);
+  color: var(--dark-black);
+}
+
+.side-bar a p {
+  margin-bottom: 0;
+}
+
+.side-bar a:hover {
+  cursor: pointer;
+  background-color: var(--light-gray);
+  color: var(--dark-black);
+}
+
+.side-bar p {
+  margin-left: 1.5rem;
 }
 
 .side-bar p:hover {
@@ -202,34 +217,34 @@ div.triangle {
 
 div.circle-top {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background: var(--black);
   border-radius: 50%;
 }
 
 div.triangle-top-r {
   position: absolute;
-  left: 8px;
-  top: 6px;
+  left: 13.5px;
+  top: 9px;
   width: 0;
   height: 0;
-  border-left: 4px solid var(--white);
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
+  border-left: 6px solid var(--white);
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
 }
 
 div.triangle-top-l {
   position: absolute;
-  left: 4px;
-  top: 6px;
+  left: 6px;
+  top: 9px;
   width: 0;
   height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid var(--white);
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
+  border-left: 6px solid transparent;
+  border-right: 6px solid var(--white);
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
 }
 
 .hp-hero {
@@ -274,10 +289,21 @@ button.btn.bg-black {
 }
 
 .hp-subhero-card {
-  /* max-height: 150px; */
-  overflow: hidden;
-  box-sizing: border-box;
   background-color: var(--dark-black);
+}
+
+.hp-subhero-card img {
+  height: 225px;
+}
+
+.hp-subhero-title {
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.hp-subhero-subtitle {
+  font-size: small;
 }
 
 /* ----------------------------------------------- ALBUM & ARTIST PAGE STYLING ----------------------------------------------- */
@@ -303,16 +329,6 @@ button.btn.bg-black {
 
 .smaller-text {
   font-size: 0.85rem;
-}
-
-.hp-subhero-title {
-  color: var(--white);
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.hp-subhero-subtitle {
-  font-size: small;
 }
 
 .song-info:hover p {
