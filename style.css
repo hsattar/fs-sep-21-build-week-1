@@ -270,12 +270,11 @@ button.btn.bg-black {
 }
 
 .hp-sub-hero {
-  height: 70vh;
   background-color: var(--black);
 }
 
 .hp-subhero-card {
-  /* max-height: 250px; */
+  /* max-height: 150px; */
   overflow: hidden;
   box-sizing: border-box;
   background-color: var(--dark-black);
