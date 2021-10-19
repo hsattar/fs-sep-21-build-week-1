@@ -187,6 +187,16 @@ div.triangle-top-l {
   border-top: 4px solid transparent;
 }
 
+.hp-card {
+  width: 18%;
+  max-height: 10%;
+  background-color: rgba(85, 84, 84, 0.37);
+}
+
+.hp-card-title {
+  color: white;
+}
+
 button.btn.bg-black {
   background-color: black;
   color: white;
