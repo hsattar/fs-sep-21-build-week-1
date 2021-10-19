@@ -37,17 +37,6 @@
     rgba(148, 8, 100, 1) 100%
   );
 }
-.header-buttons:nth-of-type(1) {
-  width: 72px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-.sidebar-btn {
-  font-size: 40px;
-  width: 100%;
-
-}
 
 .album-top-bg-image {
   background-image: url(../assets/queen1.jpg);
@@ -60,5 +49,13 @@
 .album-info{
   position:absolute;
   bottom: 10px;
-  left: 40px;
+  left: 50px;
+}
+.album-info>p:first-of-type{
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.album-info>p:last-of-type{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FDFDFD;
 }
