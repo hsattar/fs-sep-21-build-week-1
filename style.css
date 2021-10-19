@@ -168,8 +168,14 @@ div.triangle {
 
 /* ----------------------------------------------- SIDEBAR ----------------------------------------------- */
 
+.spotify-logo {
+  max-width: 90%;
+}
+
 .side-bar {
   background-color: var(--black);
+  overflow: hidden;
+  min-height: 100vh;
 }
 
 .side-bar img {
