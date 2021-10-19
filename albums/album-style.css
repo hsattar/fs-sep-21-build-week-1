@@ -1,3 +1,7 @@
+.album-img-container .col-12{
+  padding: 0;
+}
+
 .smaller-text {
   font-size: 0.85rem;
 }
@@ -38,24 +42,12 @@
   );
 }
 
-.album-top-bg-image {
-  background-image: url(../assets/queen1.jpg);
-  height: 500px;
-  padding: 1.25rem;
+
+#album-header-container{
+  height: 250px;
+  padding-top: 30px;
+  transform: scaleY(1.2);
+  background: rgb(102,23,75);
+background: linear-gradient(0deg, rgba(102,23,75,1) 0%, rgba(148,36,116,1) 76%);
 }
-.album-img-container{
-  position: relative;
-}
-.album-info{
-  position:absolute;
-  bottom: 10px;
-  left: 50px;
-}
-.album-info>p:first-of-type{
-  font-size: 70px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.album-info>p:last-of-type{
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FDFDFD;
-}
+
