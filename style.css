@@ -203,7 +203,14 @@ div.triangle-top-l {
 .hp-card {
   width: 18%;
   max-height: 10%;
+  padding: 0;
+  
+}
+
+.hp-card div:nth-of-type(1){
   background-color: rgba(85, 84, 84, 0.37);
+
+  margin: 0 20px 0 0;
 }
 
 .hp-card-title {
@@ -227,8 +234,8 @@ button.btn.bg-black {
 }
 
 .hp-subhero-card {
-  max-width: 12%;
-  max-height: 250px;
+
+  /* max-height: 250px; */
   overflow: hidden;
   box-sizing: border-box;
   background-color: var(--dark-black);
@@ -265,3 +272,4 @@ button.btn.bg-black {
 .hp-subhero-subtitle {
   font-size: small;
 }
+
