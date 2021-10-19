@@ -139,17 +139,49 @@ div.triangle {
 .rotate {
   transform: rotate(180deg);
 }
-.side-bar{
+.side-bar {
   background-color: black;
 }
-.side-barimg{
+.side-barimg {
   margin-top: 15px;
 }
 
-.btn{
+.btn {
   width: 100%;
   margin-left: 10px;
 }
-.side-bar>p{
+.side-bar > p {
   margin-left: 15px;
+}
+
+div.circle-top {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+}
+
+div.triangle-top-r {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid #ffffff;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+div.triangle-top-l {
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
 }
