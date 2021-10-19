@@ -139,3 +139,17 @@ div.triangle {
 .rotate {
   transform: rotate(180deg);
 }
+.side-bar{
+  background-color: black;
+}
+.side-barimg{
+  margin-top: 15px;
+}
+
+.btn{
+  width: 100%;
+  margin-left: 10px;
+}
+.side-bar>p{
+  margin-left: 15px;
+}
