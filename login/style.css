@@ -5,6 +5,7 @@
                     
                      :root {
                         --light-green: #1ed760;
+                        --hp-footer-black: #181818;
                     }
                     
                     .light-green-text {
@@ -131,4 +132,17 @@
                     .btn-signup:hover {
                         background-color: #616467;
                         color: white;
+                    }
+                    /* ============  Home page footer  -  Francesco =========== */
+                    
+                    .hp-footer {
+                        min-height: 300px;
+                    }
+                    
+                    .hp-footer-bg {
+                        background-color: var(--hp-footer-black);
+                    }
+                    
+                    .hp-footer-text {
+                        color: #ffff;
                     }
