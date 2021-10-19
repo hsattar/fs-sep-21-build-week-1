@@ -1,4 +1,4 @@
-.album-img-container .col-12{
+.album-img-container .col-12 {
   padding: 0;
 }
 
@@ -42,12 +42,14 @@
   );
 }
 
-
-#album-header-container{
+#album-header-container {
   height: 250px;
   padding-top: 30px;
   transform: scaleY(1.2);
-  background: rgb(102,23,75);
-background: linear-gradient(0deg, rgba(102,23,75,1) 0%, rgba(148,36,116,1) 76%);
+  background: rgb(102, 23, 75);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 23, 75, 1) 0%,
+    rgba(148, 36, 116, 1) 76%
+  );
 }
-

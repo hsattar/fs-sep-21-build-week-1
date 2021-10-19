@@ -1,68 +1,106 @@
-.album-img-container .col-12{
-    padding: 0;
+.album-img-container .col-12 {
+  padding: 0;
 }
 
 .smaller-text {
-    font-size: 0.85rem;
-  }
-  
-  .album-action-icons i {
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-  }
-  
-  .album-action-icons i:first-child {
-    font-size: 2.5rem;
-    margin-left: 0;
-  }
-  
-  .album-action-icons .bi {
-    color: var(--light-gray);
-  }
-  
-  .album-action-icons .bi-play-circle-fill {
-    color: var(--light-green);
-  }
-  
-  .divider {
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .bg-wrapper {
-    background: rgb(42, 42, 42);
-    background: linear-gradient(
-      0deg,
-      rgba(42, 42, 42, 1) 0%,
-      rgba(42, 42, 42, 1) 48%,
-      rgba(42, 42, 42, 1) 68%,
-      rgba(104, 22, 76, 1) 100%,
-      rgba(148, 8, 100, 1) 100%,
-      rgba(148, 8, 100, 1) 100%
-    );
-  }
-  
-  .album-top-bg-image {
-    background-image: url(../assets/queen1.jpg);
-    height: 500px;
-    background-repeat: no-repeat;
-    padding: 1.25rem;
-    background-size: 100%;
-  }
-  .album-img-container{
-    position: relative;
-  }
-  .album-info{
-    position:absolute;
-    bottom: 10px;
-    left: 50px;
-  }
-  .album-info>p:first-of-type{
-    font-size: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .album-info>p:last-of-type{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FDFDFD;
-  }
-  
+  font-size: 0.85rem;
+}
+
+.album-action-icons i {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.album-action-icons i:first-child {
+  font-size: 2.5rem;
+  margin-left: 0;
+}
+
+.album-action-icons .bi {
+  color: var(--light-gray);
+}
+
+.album-action-icons .bi-play-circle-fill {
+  color: var(--light-green);
+}
+
+.divider {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bg-wrapper {
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(42, 42, 42, 1) 48%,
+    rgba(42, 42, 42, 1) 68%,
+    rgba(104, 22, 76, 1) 100%,
+    rgba(148, 8, 100, 1) 100%,
+    rgba(148, 8, 100, 1) 100%
+  );
+}
+
+.album-top-bg-image {
+  background-image: url(../assets/queen1.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  padding: 1.25rem;
+  background-size: 100%;
+}
+.album-img-container {
+  position: relative;
+}
+.album-info {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+.album-info > p:first-of-type {
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.album-info > p:last-of-type {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fdfdfd;
+}
+
+.follow-btn {
+  margin-left: 1.5rem;
+  border: 1px solid white;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.see-more {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.bg-wrapper {
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(42, 42, 42, 1) 48%,
+    rgba(42, 42, 42, 1) 50%,
+    rgb(95, 94, 95) 100%,
+    rgb(114, 112, 113) 100%,
+    rgb(112, 111, 112) 100%
+  );
+}
+
+.artist-song-img {
+  height: 40px;
+}
+
+.artist-pick-img {
+  height: 60px;
+}
+
+.posted-by img {
+  height: 20px;
+  border-radius: 50%;
+}
