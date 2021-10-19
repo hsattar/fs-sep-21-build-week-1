@@ -172,3 +172,7 @@ div.triangle {
 .album-action-icons .bi-pause-circle-fill {
   color: var(--light-green);
 }
+
+.smaller-text {
+  font-size: 0.85rem;
+}

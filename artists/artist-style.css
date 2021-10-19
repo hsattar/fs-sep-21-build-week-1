@@ -27,3 +27,12 @@
 .artist-song-img {
   height: 40px;
 }
+
+.artist-pick-img {
+  height: 60px;
+}
+
+.posted-by img {
+  height: 20px;
+  border-radius: 50%;
+}

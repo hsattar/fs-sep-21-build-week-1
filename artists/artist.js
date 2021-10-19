@@ -45,12 +45,12 @@ for (let i = 0; i < artistSongs.length; i++) {
             <p>${i + 1}</p>
         </div>
 
-        <div class="col-6 d-flex">
+        <div class="col-7 d-flex">
             <img class="artist-song-img mr-2" src="${artistSongs[i].img}">
             <p class="my-0 font-weight-bold">${artistSongs[i].name}</p>
         </div>
 
-        <div class="col-4 light-gray-text">
+        <div class="col-3 light-gray-text">
             <p>${artistSongs[i].downloads}</p>
         </div>
 
