@@ -170,14 +170,21 @@
       color: #a7a7a7;
   }
   
-  .hp-footer-left-side {
+  .hp-footer-left-section {
       max-width: 30%;
-      width: 28%;
+  }
+  
+  .hp-footer-left-side {
+      width: 100%;
       align-items: center;
   }
   
+  .hp-footer-center-section {
+      max-width: 50%;
+  }
+  
   div.hp-footer-center-side {
-      width: 650px;
+      width: 100%;
       height: 80px;
   }
   
@@ -186,6 +193,23 @@
   }
   
   .hp-footer-center-img {
-      width: 20px;
-      max-width: 20px;
+      width: 22px;
+      max-width: 22px;
+      height: 20px;
+  }
+  
+  .hp-footer-end-section {
+      max-width: 20%;
+  }
+  
+  .hp-footer-end-side {
+      width: 100%;
+      height: 80px;
+  }
+  
+  div.bordered {
+      height: 3px;
+      width: 120px;
+      border: solid 2px gainsboro;
+      border-radius: 10px;
   }
