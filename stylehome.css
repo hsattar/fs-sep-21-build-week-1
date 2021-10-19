@@ -213,3 +213,29 @@
       border: solid 2px gainsboro;
       border-radius: 10px;
   }
+  
+  div.circle {
+      position: relative;
+      margin-top: -10px;
+      padding-bottom: 10px;
+      width: 30px;
+      height: 30px;
+      background: #e2e2e2;
+      border-radius: 50%;
+  }
+  
+  div.triangle {
+      position: absolute;
+      left: 11px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid #000000;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-top: 8px solid transparent;
+  }
+  
+  .rotate {
+      transform: rotate(180deg);
+  }
