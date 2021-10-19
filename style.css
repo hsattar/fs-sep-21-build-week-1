@@ -139,17 +139,36 @@ div.triangle {
 .rotate {
   transform: rotate(180deg);
 }
-.side-bar{
+.side-bar {
   background-color: black;
 }
-.side-barimg{
+.side-barimg {
   margin-top: 15px;
 }
 
-.btn{
+.btn {
   width: 100%;
   margin-left: 10px;
 }
-.side-bar>p{
+.side-bar > p {
   margin-left: 15px;
+}
+
+.album-action-icons i {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.album-action-icons i:first-child {
+  font-size: 2.5rem;
+  margin-left: 0;
+}
+
+.album-action-icons .bi {
+  color: var(--light-gray);
+}
+
+.album-action-icons .bi-play-circle-fill,
+.album-action-icons .bi-pause-circle-fill {
+  color: var(--light-green);
 }

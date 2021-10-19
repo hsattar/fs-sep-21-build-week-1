@@ -48,8 +48,6 @@ const albumSongs = [
 
 const albumSongsContainer = document.querySelector('#album-songs-container')
 
-console.log(albumSongsContainer)
-
 for (let i = 0; i < albumSongs.length; i++) {
     const songRow = document.createElement('div')
     songRow.innerHTML = `

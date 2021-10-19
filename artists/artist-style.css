@@ -1,0 +1,29 @@
+.follow-btn {
+  margin-left: 1.5rem;
+  border: 1px solid white;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.see-more {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.bg-wrapper {
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(42, 42, 42, 1) 48%,
+    rgba(42, 42, 42, 1) 50%,
+    rgb(95, 94, 95) 100%,
+    rgb(114, 112, 113) 100%,
+    rgb(112, 111, 112) 100%
+  );
+}
+
+.artist-song-img {
+  height: 40px;
+}
