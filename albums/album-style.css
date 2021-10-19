@@ -53,3 +53,7 @@
     rgba(148, 36, 116, 1) 76%
   );
 }
+
+.scroll-bar {
+  max-height: 120vh;
+}

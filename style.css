@@ -265,3 +265,32 @@ button.btn.bg-black {
 .hp-subhero-subtitle {
   font-size: small;
 }
+
+.side-bar {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(122, 122, 122);
+}
+
+.sidebar-links {
+  margin-left: 1rem;
+}
+
+.sidebar-links:hover {
+  text-decoration: none;
+  color: var(--light-gray);
+}
