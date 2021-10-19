@@ -139,9 +139,11 @@ div.triangle {
 .rotate {
   transform: rotate(180deg);
 }
+
 .side-bar {
   background-color: black;
 }
+
 .side-barimg {
   margin-top: 15px;
 }
@@ -151,6 +153,7 @@ div.triangle {
   margin-left: 10px;
   font-size: 20px;
 }
+
 .side-bar > p {
   margin-left: 15px;
 }
@@ -212,6 +215,24 @@ button.btn.bg-black {
   color: white;
   font-size: 15px;
 }
+
+.hp-tag {
+  font-size: 12px;
+  padding-top: 6px;
+}
+
+.hp-sub-hero {
+  height: 70vh;
+  background-color: rgb(12, 12, 12);
+}
+
+.hp-subhero-card {
+  max-width: 12%;
+  max-height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: var(--dark-black);
+}
 .album-action-icons i {
   font-size: 1.5rem;
   margin-left: 1.5rem;
@@ -233,4 +254,14 @@ button.btn.bg-black {
 
 .smaller-text {
   font-size: 0.85rem;
+}
+
+.hp-subhero-title {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.hp-subhero-subtitle {
+  font-size: small;
 }
