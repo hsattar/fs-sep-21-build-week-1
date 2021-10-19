@@ -146,9 +146,10 @@ div.triangle {
   margin-top: 15px;
 }
 
-.btn {
+.sidebar-btn {
   width: 100%;
   margin-left: 10px;
+  font-size: 20px;
 }
 .side-bar > p {
   margin-left: 15px;
@@ -184,4 +185,10 @@ div.triangle-top-l {
   border-right: 4px solid #ffffff;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
+}
+
+button.btn.bg-black {
+  background-color: black;
+  color: white;
+  font-size: 15px;
 }
