@@ -187,6 +187,16 @@ div.triangle-top-l {
   border-top: 4px solid transparent;
 }
 
+.hp-hero {
+  min-height: 35vh;
+  background: rgb(60, 9, 8);
+  background: linear-gradient(
+    180deg,
+    rgba(60, 9, 8, 1) 0%,
+    rgba(0, 0, 0, 1) 67%
+  );
+}
+
 .hp-card {
   width: 18%;
   max-height: 10%;
