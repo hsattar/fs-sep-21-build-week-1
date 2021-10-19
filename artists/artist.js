@@ -39,7 +39,7 @@ for (let i = 0; i < artistSongs.length; i++) {
     const songRow = document.createElement('div')
     songRow.classList.add('col-12')
     songRow.innerHTML = `
-    <div class="row my-2">
+    <div class="row my-2 song-info">
                         
         <div class="col-1 light-gray-text">
             <p>${i + 1}</p>

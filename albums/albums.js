@@ -51,7 +51,7 @@ const albumSongsContainer = document.querySelector('#album-songs-container')
 for (let i = 0; i < albumSongs.length; i++) {
     const songRow = document.createElement('div')
     songRow.innerHTML = `
-    <div class="row">
+    <div class="row song-info">
                     
         <div class="col-1 light-gray-text">
             <p>${i + 1}</p>
@@ -69,3 +69,23 @@ for (let i = 0; i < albumSongs.length; i++) {
     </div>`
     albumSongsContainer.appendChild(songRow)
 }
+
+const heart = document.querySelector('.bi-heart')
+let heartClicks = 0
+heart.addEventListener('click', () => {
+    if (heartClicks % 2 === 0) {
+        heart.className = 'bi bi-heart-fill'
+        heart.style.color = 'red'
+    } else {
+        heart.className = 'bi bi-heart'
+        heart.style = 'lightgrey'
+    }
+    heartClicks++
+})
+
+// const songInfo = document.querySelectorAll('.song-info')
+// songInfo.forEach(song => {
+//     song.addEventListener('mouseover', () => {
+//         song.className = 'row song-info light-green-text'
+//     })
+// })

@@ -1,27 +1,5 @@
-.album-img-container .col-12{
+.album-img-container .col-12 {
   padding: 0;
-}
-
-.smaller-text {
-  font-size: 0.85rem;
-}
-
-.album-action-icons i {
-  font-size: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.album-action-icons i:first-child {
-  font-size: 2.5rem;
-  margin-left: 0;
-}
-
-.album-action-icons .bi {
-  color: var(--light-gray);
-}
-
-.album-action-icons .bi-play-circle-fill {
-  color: var(--light-green);
 }
 
 .divider {
@@ -42,64 +20,67 @@
   );
 }
 
-
-#album-header-container{
+#album-header-container {
   height: 250px;
   padding-top: 30px;
   transform: scaleY(1.2);
-  background: rgb(102,23,75);
-background: linear-gradient(0deg, rgba(102,23,75,1) 0%, rgba(148,36,116,1) 76%);
-
+  background: rgb(102, 23, 75);
+  background: linear-gradient(
+    0deg,
+    rgba(102, 23, 75, 1) 0%,
+    rgba(148, 36, 116, 1) 76%
+  );
 }
 
-.album-img{
+.album-img {
   height: 250px;
   display: flex;
 }
-.album-img img{
+.album-img img {
   width: 240px;
   box-shadow: 0px 4px 19px -1px #252525;
 }
 
-.album-content{
+.album-content {
   display: flex;
   align-items: end;
   transform: scaleY(0.9);
 }
 
 .album-content-text {
-
 }
 
-.album-content-text .album-title{
+.album-content-text .album-title {
   font-weight: 800;
   margin: 0;
   font-size: 45px;
 }
 
-.album-content-text .album-mini-info{
+.album-content-text .album-mini-info {
   font-size: small;
-  color:#c8a6c0;
-margin: 0;
-}
-
-.album-content-text .album-mini-info p{
+  color: #c8a6c0;
   margin: 0;
 }
 
-.album-content-text .profile-name{
+.album-content-text .album-mini-info p {
+  margin: 0;
+}
+
+.album-content-text .profile-name {
   color: white;
   margin: 0;
   margin: 0;
 }
 
-.album-content-text .album-badge{
-margin: 0;
-font-size: small;
-font-weight: 700;
-
+.album-content-text .album-badge {
+  margin: 0;
+  font-size: small;
+  font-weight: 700;
 }
 
-#album-songs-container{
+#album-songs-container {
   padding-top: 90px;
+}
+.scroll-bar {
+  max-height: 120vh;
 }

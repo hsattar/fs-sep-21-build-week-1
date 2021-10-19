@@ -1,14 +1,18 @@
+/* ----------------------------------------------- GENERAL STYLING ----------------------------------------------- */
+
 :root {
   --light-green: #1ed760;
   --light-black: #2a2a2a;
   --dark-black: #121212;
   --black: #1e1e1e;
   --light-gray: #b3b3b3;
+  --white: #fff;
+  --black: #000;
 }
 
 body {
   background-color: var(--light-black);
-  color: white;
+  color: var(--white);
 }
 
 .light-green-text {
@@ -28,6 +32,28 @@ body {
   text-align: center;
 }
 
+.side-bar {
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(122, 122, 122);
+}
+
+/* ----------------------------------------------- MUSIC CONTROLS SECTION (FOOTER) ----------------------------------------------- */
+
 .music-controls-section {
   position: fixed;
   bottom: 0;
@@ -40,20 +66,20 @@ body {
 }
 
 .hp-footer-bg {
-  background-color: var(--black);
+  background-color: var(--dark-black);
 }
 
 .hp-footer-text {
-  color: #ffff;
+  color: var(--white);
   font-size: 12px;
 }
 
 a.hp-footer-a {
-  color: #ffff;
+  color: var(--white);
 }
 
 a.hp-footer-a-sm {
-  color: #a7a7a7;
+  color: var(--light-gray);
 }
 
 .hp-footer-text-t {
@@ -67,7 +93,7 @@ a.hp-footer-a-sm {
 }
 
 .hp-footer-icons {
-  color: #a7a7a7;
+  color: var(--light-gray);
 }
 
 .hp-footer-left-section {
@@ -110,7 +136,7 @@ div.hp-footer-center-side {
 div.bordered {
   height: 3px;
   width: 120px;
-  border: solid 2px gainsboro;
+  border: solid 2px var(--light-gray);
   border-radius: 10px;
 }
 
@@ -120,7 +146,7 @@ div.circle {
   padding-bottom: 10px;
   width: 30px;
   height: 30px;
-  background: #e2e2e2;
+  background: var(--light-gray);
   border-radius: 50%;
 }
 
@@ -130,7 +156,7 @@ div.triangle {
   top: 7px;
   width: 0;
   height: 0;
-  border-left: 8px solid #000000;
+  border-left: 8px solid var(--black);
   border-right: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
@@ -140,8 +166,10 @@ div.triangle {
   transform: rotate(180deg);
 }
 
+/* ----------------------------------------------- SIDEBAR ----------------------------------------------- */
+
 .side-bar {
-  background-color: black;
+  background-color: var(--black);
 }
 
 .side-barimg {
@@ -158,11 +186,25 @@ div.triangle {
   margin-left: 15px;
 }
 
+.side-bar p:hover {
+  color: var(--light-green);
+  cursor: pointer;
+}
+
+.sidebar-links {
+  margin-left: 1rem;
+}
+
+.sidebar-links:hover {
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
 div.circle-top {
   position: relative;
   width: 20px;
   height: 20px;
-  background: #000000;
+  background: var(--black);
   border-radius: 50%;
 }
 
@@ -172,7 +214,7 @@ div.triangle-top-r {
   top: 6px;
   width: 0;
   height: 0;
-  border-left: 4px solid #ffffff;
+  border-left: 4px solid var(--white);
   border-right: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
@@ -185,7 +227,7 @@ div.triangle-top-l {
   width: 0;
   height: 0;
   border-left: 4px solid transparent;
-  border-right: 4px solid #ffffff;
+  border-right: 4px solid var(--white);
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
 }
@@ -204,22 +246,21 @@ div.triangle-top-l {
   width: 18%;
   max-height: 10%;
   padding: 0;
-  
 }
 
-.hp-card div:nth-of-type(1){
+.hp-card div:nth-of-type(1) {
   background-color: rgba(85, 84, 84, 0.37);
 
   margin: 0 20px 0 0;
 }
 
 .hp-card-title {
-  color: white;
+  color: var(--white);
 }
 
 button.btn.bg-black {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   font-size: 15px;
 }
 
@@ -230,16 +271,18 @@ button.btn.bg-black {
 
 .hp-sub-hero {
   height: 70vh;
-  background-color: rgb(12, 12, 12);
+  background-color: var(--black);
 }
 
 .hp-subhero-card {
-
   /* max-height: 250px; */
   overflow: hidden;
   box-sizing: border-box;
   background-color: var(--dark-black);
 }
+
+/* ----------------------------------------------- ALBUM & ARTIST PAGE STYLING ----------------------------------------------- */
+
 .album-action-icons i {
   font-size: 1.5rem;
   margin-left: 1.5rem;
@@ -264,7 +307,7 @@ button.btn.bg-black {
 }
 
 .hp-subhero-title {
-  color: rgb(255, 255, 255);
+  color: var(--white);
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -273,3 +316,7 @@ button.btn.bg-black {
   font-size: small;
 }
 
+.song-info:hover p {
+  color: var(--light-green);
+  cursor: pointer;
+}
