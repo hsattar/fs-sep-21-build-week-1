@@ -22,7 +22,19 @@ const toggleTheme = () => {
     }
 }
 
+window.onload = () => {
+    toggleTheme()
+}
+
 themeToggle.onclick = () => {
     toggleTheme()
 }
+
+const favouriteSongs = [
+    {
+        name: '',
+        duration: ''
+    },
+    
+]
 
