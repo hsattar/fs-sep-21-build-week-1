@@ -135,42 +135,45 @@
                                 <h1 class="text-muted"><strong>Account info</strong></h1>
                                 <img src="../assets/profile.jpg.jpg" class="rounded-circle profile-picture img-fluid" alt="profile-photo">
                                 </div>
-                                <div class="label-name col-3 d-flex flex-column">
+                                <div class="label-name col-4 d-flex flex-column">
                                 <label for="name" class="text-info"><strong>Name:</strong></label>
                                 <p class="name text-info">Ali</p>
                                 <div class="text-label" ></div>
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                     </div>
-                                    <input type="text" class="form-control rounded-pill" placeholder="Enter your name" aria-label="name" aria-describedby="addon-wrapping" required>
+                                    <input type="text" class="d-flex flex-row form-control rounded-pill" placeholder="Enter your name" aria-label="name" aria-describedby="addon-wrapping" required>
+                                    <button type="button" class="d-flex flex-row edit-info btn btn-success rounded-pill" onclick="changeName(event)"><i class="bi bi-pencil"></i></button>
                                 </div>
-                                <button type="button" class="edit-info btn btn-success rounded-pill" onclick="changeName(event)">Edit name</button>
+                                
                                 <label for="password" class="mt-5 text-info"><strong>Password:</strong></label>
                                 <p class="password text-info">*********</p>
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                     </div>
                                     <input type="password" class="form-control form2 rounded-pill" placeholder="Enter your password" aria-label="password" aria-describedby="addon-wrapping">
+                                    <button type="button" class=" edit-info btn btn-success rounded-pill" onclick="changePassword(event)"><i class="bi bi-pencil"></i></button>
                                 </div>
-                                <button type="button" class="mt-2 edit-info btn btn-success rounded-pill" onclick="changePassword(event)">Edit password</button>
                                 </div>
-                                <div class="label-name col-3 d-flex flex-column">
+                                <div class="label-name col-4">
                                 <label for="email" class="text-info"><strong>Email:</strong></label>
                                 <p class="email text-info">James1999007@gmail.com</p>
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                     </div>
                                     <input type="email" class="form-control form3 rounded-pill" placeholder="Enter your email" aria-label="email" aria-describedby="addon-wrapping" required/>
+                                    <button type="button" class="edit-info btn btn-success rounded-pill" onclick="changeEmail(event)"><i class="bi bi-pencil"></i></button>
                                 </div>
-                                <button type="button" class="edit-info btn btn-success rounded-pill" onclick="changeEmail(event)">Edit email</button>
+                                
                                 <label for="age" class="mt-5 text-info"><strong>Age:</strong></label>
                                 <p class="age text-info">22</p>
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                     </div>
                                     <input type="number" class="form-control form4 rounded-pill" placeholder="Select your age" aria-label="number" aria-describedby="addon-wrapping">
+                                    <button type="button" class=" edit-info btn btn-success rounded-pill" onclick="changeAge(event)"><i class="bi bi-pencil"></i></button>
                                 </div>
-                                <button type="button" class="mt-2 edit-info btn btn-success rounded-pill" onclick="changeAge(event)">Edit age</button>
+                               
                                 </div>
                             </div>   
                          </div>
