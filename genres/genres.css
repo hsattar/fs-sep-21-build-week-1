@@ -29,3 +29,18 @@ body {
 h3:hover {
     color: var(--light-green)
 }
+
+.styleSection {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 5px;
+}
+
+.styleSection#rockStyle {
+    background-image: url("/assets/background-genre/rock.jpg");
+}
+
+.styleSection#undergroundStyle {
+    background-image: url("/assets/background-genre/underground.jpg");
+}
