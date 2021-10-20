@@ -297,9 +297,7 @@ button.btn.bg-black {
 .hp-subhero-card {
   background-color: var(--dark-black);
 }
-.hp-subhero-card:hover{
-  background-color: #3e3e3e
-}
+
 
 .hp-subhero-card img {
  ;
@@ -344,3 +342,12 @@ button.btn.bg-black {
   color: var(--light-green);
   cursor: pointer;
 }
+
+/* ----------------------------------------------- RECENTLY PLAYED ----------------------------------------------- */
+.hp-subhero-card:hover{
+  background-color: #3e3e3e
+
+}
+.hp-subhero-card img {
+  ;
+ }
