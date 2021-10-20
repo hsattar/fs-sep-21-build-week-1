@@ -30,3 +30,11 @@ themeToggle.onclick = () => {
     toggleTheme()
 }
 
+const favouriteSongs = [
+    {
+        name: '',
+        duration: ''
+    },
+    
+]
+

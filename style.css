@@ -54,79 +54,6 @@ body {
 }
 
 /* ----------------------------------------------- MUSIC CONTROLS SECTION (FOOTER) ----------------------------------------------- */
-
-.hp-footer {
-  min-height: 6rem;
-}
-
-.hp-footer-bg {
-  background-color: var(--dark-black);
-}
-
-.hp-footer-text {
-  color: var(--white);
-  font-size: 12px;
-}
-
-a.hp-footer-a {
-  color: var(--white);
-}
-
-a.hp-footer-a-sm {
-  color: var(--light-gray);
-}
-
-.hp-footer-text-t {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.hp-footer-img {
-  width: 70px;
-  height: 70px;
-}
-
-.hp-footer-icons {
-  color: var(--light-gray);
-}
-
-.hp-footer-left-section {
-  max-width: 30%;
-}
-
-.hp-footer-left-side {
-  width: 100%;
-  align-items: center;
-}
-
-.hp-footer-center-section {
-  max-width: 50%;
-}
-
-div.hp-footer-center-side {
-  width: 100%;
-  height: 80px;
-}
-
-.hp-footer-center-gap {
-  column-gap: 30px;
-}
-
-.hp-footer-center-img {
-  width: 22px;
-  max-width: 22px;
-  height: 20px;
-}
-
-.hp-footer-end-section {
-  max-width: 20%;
-}
-
-.hp-footer-end-side {
-  width: 100%;
-  height: 80px;
-}
-
 div.bordered {
   height: 3px;
   width: 120px;
@@ -175,7 +102,6 @@ div.triangle {
 .side-bar img {
   margin-top: 15px;
 }
-
 .side-bar a {
   color: var(--light-gray);
   padding: 0.25rem 0.5rem;
@@ -188,29 +114,34 @@ div.triangle {
 }
 
 .side-bar a p {
-  color: var(--light-gray);
   margin-bottom: 0;
 }
 
-.side-bar p {
-  color: var(--light-gray);
-  margin-left: 1.5rem;
-}
-
-.side-bar a:hover {
+.side-bar a:hover:not(:first-child) {
   cursor: pointer;
   background-color: var(--light-gray);
   color: var(--dark-black);
 }
 
-.side-bar p:hover {
+.side-bar .other-links p {
+  color: var(--light-gray);
+  margin-left: 1.5rem;
+}
+
+.side-bar .other-links p:hover {
   color: var(--white);
   cursor: pointer;
 }
 
-.sidebar-links {
-  margin-left: 1rem;
+.nav-bar a {
+  color: var(--light-gray);
 }
+
+.nav-bar i {
+  font-size: 1.5rem;
+}
+
+/* NEW SECTION */
 
 div.circle-top {
   position: relative;
