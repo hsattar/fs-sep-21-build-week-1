@@ -11,20 +11,32 @@ const toggleTheme = () => {
         root.style.setProperty('--dark-black', '#121212')
         root.style.setProperty('--light-gray', '#b3b3b3')
         root.style.setProperty('--white', '#fff')
+        root.style.setProperty('--dark-gray', '#727272')
+        root.style.setProperty('--sidebar-text-color', '#a0a0a0')
+        root.style.setProperty('--card-wrapper-bg', '#5554545e')
+        root.style.setProperty('--recently-played', '#3e3e3e')
+        root.style.setProperty('--good-morning', '#3c0908')
         darkTheme = false
     } else {
         root.style.setProperty('--black', '#fff')
         root.style.setProperty('--light-black', '#b3b3b3')
-        root.style.setProperty('--dark-black', '#5e5d5d')
-        root.style.setProperty('--light-gray', '#f0e9e9')
+        root.style.setProperty('--dark-black', '#b3b3b3')
+        root.style.setProperty('--light-gray', '#000')
         root.style.setProperty('--white', '#000')
+        root.style.setProperty('--dark-gray', '#5e5d5d')
+        root.style.setProperty('--sidebar-text-color', '#2e2e2e')
+        root.style.setProperty('--card-wrapper-bg', '#b3b3b3')
+        root.style.setProperty('--recently-played', '#b3b3b3')
+        root.style.setProperty('--good-morning', '#fff')
+
         darkTheme = true
     }
 }
 
-window.onload = () => {
-    toggleTheme()
-}
+
+// window.onload = () => {
+//     toggleTheme()
+// }
 
 themeToggle.onclick = () => {
     toggleTheme()
@@ -89,7 +101,7 @@ goodMorningCards.forEach(card => {
     const cardContainer = document.createElement('div')
     cardContainer.className = 'col-6 col-md-4 col-lg-3 d-flex align-items-center'
     cardContainer.innerHTML = `
-    <div class="card-wrapper d-flex my-2 align-items-center">
+    <div class="card-wrapper d-flex my-2 align-items-center rounded">
         <img cla src="${card.img}">
         <p class="ml-3 mb-0">${card.title}</p>
     </div>`
