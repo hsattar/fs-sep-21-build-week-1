@@ -25,3 +25,7 @@ body {
 .display {
     display: block;
 }
+
+h3:hover {
+    color: var(--light-green)
+}
