@@ -297,6 +297,9 @@ button.btn.bg-black {
 .hp-subhero-card {
   background-color: var(--dark-black);
 }
+.hp-subhero-card:hover{
+  background-color: #3e3e3e
+}
 
 .hp-subhero-card img {
  ;
