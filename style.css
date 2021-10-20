@@ -187,30 +187,24 @@ div.triangle-top-l {
   );
 }
 
-.hp-card {
-  width: 18%;
-  max-height: 10%;
-  padding: 0;
+.good-morning-container img {
+  height: 50px;
 }
 
-.hp-card:hover {
-  cursor: pointer;
-  border: 2px solid var(--light-green);
-}
-
-.hp-card div:nth-of-type(1) {
-  background-color: rgba(85, 84, 84, 0.37);
-  margin: 0 20px 0 0;
-}
-
-.hp-card-title {
+.good-morning-container p {
+  font-weight: bold;
+  font-size: 1rem;
   color: var(--white);
-  font-size: medium;
 }
 
-.hp-card-img-wrapper {
-  border-radius: 4px;
-  overflow: hidden;
+.good-morning-container .card-wrapper {
+  background-color: #5554545e;
+  width: 100%;
+}
+
+.good-morning-container .card-wrapper:hover {
+  border: 2px solid var(--light-green);
+  cursor: pointer;
 }
 
 button.btn.bg-black {
