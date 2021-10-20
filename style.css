@@ -49,7 +49,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(122, 122, 122);
+  background: #7a7a7a;
 }
 
 /* ----------------------------------------------- MUSIC CONTROLS SECTION (FOOTER) ----------------------------------------------- */
@@ -194,7 +194,13 @@ div.triangle {
 }
 
 .side-bar a p {
+  color: var(--light-gray);
   margin-bottom: 0;
+}
+
+.side-bar p {
+  color: var(--light-gray);
+  margin-left: 1.5rem;
 }
 
 .side-bar a:hover {
@@ -203,22 +209,13 @@ div.triangle {
   color: var(--dark-black);
 }
 
-.side-bar p {
-  margin-left: 1.5rem;
-}
-
 .side-bar p:hover {
-  color: var(--light-green);
+  color: var(--white);
   cursor: pointer;
 }
 
 .sidebar-links {
   margin-left: 1rem;
-}
-
-.sidebar-links:hover {
-  text-decoration: none;
-  color: var(--light-gray);
 }
 
 div.circle-top {
@@ -267,6 +264,11 @@ div.triangle-top-l {
   width: 18%;
   max-height: 10%;
   padding: 0;
+}
+
+.hp-card:hover {
+  cursor: pointer;
+  border: 2px solid var(--light-green);
 }
 
 .hp-card div:nth-of-type(1) {

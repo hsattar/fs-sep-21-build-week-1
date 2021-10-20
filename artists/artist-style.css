@@ -22,13 +22,16 @@
 
 .album-top-bg-image {
   background-image: url(../assets/queen1.jpg);
-  height: 500px;
+  min-height: 100%;
   background-repeat: no-repeat;
   padding: 1.25rem;
-  background-size: 100%;
+  object-fit: cover;
+  background-position: center;
 }
 .album-img-container {
   position: relative;
+  width: 100%;
+  height: 500px;
 }
 .album-info {
   position: absolute;
