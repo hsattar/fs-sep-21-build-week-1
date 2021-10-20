@@ -79,6 +79,8 @@
 #album-songs-container {
   padding-top: 90px;
 }
-.scroll-bar {
-  max-height: 120vh;
+
+* {
+  overflow: hidden;
+  overflow-y: scroll;
 }
