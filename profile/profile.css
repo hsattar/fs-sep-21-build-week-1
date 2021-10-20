@@ -1,0 +1,19 @@
+.profile-picture{
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .label-name{
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  .form-control{
+    /* width: 50px; */
+    background-color: black;
+  }
+  .add-name{
+    width: 100px;
+    margin-top: 10px;
+  }
+  .add-password{
+    width: 150px;
+  }
