@@ -1,4 +1,4 @@
-let darkTheme = true;
+let darkTheme = false;
 
 const root = document.documentElement
 const themeToggle = document.querySelector('#toggle-theme')
@@ -75,7 +75,6 @@ const goodMorningCards = [
         img: './assets/cards/16.jpg',
         title: 'Song 8'
     },
-
     {
         img: './assets/cards/17.jpg',
         title: 'Song 9'
@@ -108,7 +107,94 @@ goodMorningCards.forEach(card => {
     goodMorningContainer.appendChild(cardContainer)
 })
 
+const recentlyPlayed = [
+    './assets/cards/1.jpg',
+    './assets/cards/2.jpg',
+    './assets/cards/3.jpg',
+    './assets/cards/4.jpg',
+    './assets/cards/5.jpg',
+    './assets/cards/6.jpg',
+]
 
+const showsToTry = [
+    './assets/cards/7.jpg',
+    './assets/cards/8.jpg',
+    './assets/cards/9.jpg',
+    './assets/cards/10.jpg',
+    './assets/cards/11.jpg',
+    './assets/cards/12.jpg',
+]
+
+const moreWhatYouLike = [
+    './assets/cards/13.jpg',
+    './assets/cards/14.jpg',
+    './assets/cards/15.jpg',
+    './assets/cards/16.jpg',
+    './assets/cards/17.jpg',
+    './assets/cards/18.jpg',
+]
+
+const hits = [
+    './assets/cards/19.jpg',
+    './assets/cards/20.jpg',
+    './assets/cards/21.jpg',
+    './assets/cards/22.jpg',
+    './assets/cards/23.jpg',
+    './assets/cards/24.jpg',
+]
+
+const bestOf2020 = [
+    './assets/cards/25.jpg',
+    './assets/cards/26.jpg',
+    './assets/cards/27.jpg',
+    './assets/cards/28.jpg',
+    './assets/cards/29.jpg',
+    './assets/cards/30.jpg',
+]
+
+const jumpBack = [
+    './assets/cards/31.jpg',
+    './assets/cards/32.jpg',
+    './assets/cards/33.jpg',
+    './assets/cards/34.jpg',
+    './assets/cards/35.jpg',
+    './assets/cards/36.jpg',
+]
+
+const fansOfSanah = [
+    './assets/cards/1.jpg',
+    './assets/cards/2.jpg',
+    './assets/cards/3.jpg',
+    './assets/cards/4.jpg',
+    './assets/cards/5.jpg',
+    './assets/cards/6.jpg',
+]
+
+const recentlyPlayedSection = document.querySelector('#recently-played-section')
+recentlyPlayed.forEach(song => {
+    const recentlyPlayedSongs = document.createElement('div')
+    recentlyPlayedSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    recentlyPlayedSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    recentlyPlayedSection.appendChild(recentlyPlayedSongs)
+})
+
+const showsToTrySection = document.querySelector('#shows-to-try')
+showsToTry.forEach(song => {
+    const showsToTrySongs = document.createElement('div')
+    showsToTrySongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    showsToTrySongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    showsToTrySection.appendChild(showsToTrySongs)
+})
 
 const favouriteSongs = [
     {
