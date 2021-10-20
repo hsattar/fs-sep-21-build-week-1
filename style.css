@@ -14,7 +14,7 @@
 
 body {
   background-color: var(--light-black);
-  color: var(--sidebar-text-color);
+  color: var(--white);
   font-size: small;
 }
 
