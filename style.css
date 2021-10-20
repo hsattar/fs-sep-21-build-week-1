@@ -134,14 +134,16 @@ div.triangle {
   color: var(--dark-black);
 }
 
-.side-bar .other-links p {
+.side-bar .other-links a {
   color: var(--light-gray);
   margin-left: 1.5rem;
+  font-size: 0.85rem;
 }
 
-.side-bar .other-links p:hover {
+.side-bar .other-links a:hover {
   color: var(--white);
   cursor: pointer;
+  background-color: var(--black);
 }
 
 .nav-bar a {
@@ -330,4 +332,21 @@ button.btn.bg-black {
   width: 50px;
   background-color: var(--light-gray);
   border-radius: 300px;
+}
+
+.main-page-content,
+.side-bar {
+  padding-bottom: 85px;
+}
+
+@media screen and (max-width: 996px) {
+  .main-page-content {
+    padding-bottom: 135px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-page-content {
+    padding-bottom: 115px;
+  }
 }
