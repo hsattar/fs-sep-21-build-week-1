@@ -13,6 +13,8 @@
   --recently-played: #3e3e3e;
   --good-morning: #3c0908;
   --sidebar-selected: #b3b3b3;
+  --sidebar-other: #b3b3b3;
+  --sidebar-other-hover: #fff;
   /* --new-color: red; */
 }
 
@@ -135,13 +137,13 @@ div.triangle {
 }
 
 .side-bar .other-links a {
-  color: var(--light-gray);
+  color: var(--sidebar-other);
   margin-left: 1.5rem;
   font-size: 0.85rem;
 }
 
 .side-bar .other-links a:hover {
-  color: var(--white);
+  color: var(--sidebar-other-hover);
   cursor: pointer;
   background-color: var(--black);
 }

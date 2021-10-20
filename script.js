@@ -17,6 +17,8 @@ const toggleTheme = () => {
         root.style.setProperty('--recently-played', '#3e3e3e')
         root.style.setProperty('--good-morning', '#3c0908')
         root.style.setProperty('--sidebar-selected', '#b3b3b3')
+        root.style.setProperty('--sidebar-other', '#b3b3b3')
+        root.style.setProperty('--sidebar-other-hover', '#fff')
         darkTheme = false
     } else {
         root.style.setProperty('--black', '#fff')
@@ -30,6 +32,8 @@ const toggleTheme = () => {
         root.style.setProperty('--recently-played', '#b3b3b3')
         root.style.setProperty('--good-morning', '#fff')
         root.style.setProperty('--sidebar-selected', '#727272')
+        root.style.setProperty('--sidebar-other', '#2a2a2a')
+        root.style.setProperty('--sidebar-other-hover', '#000')
         darkTheme = true
     }
 }
