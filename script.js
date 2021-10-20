@@ -196,6 +196,45 @@ showsToTry.forEach(song => {
     showsToTrySection.appendChild(showsToTrySongs)
 })
 
+const moreWhatYouLikeSection = document.querySelector('#more-what-you-like')
+moreWhatYouLike.forEach(song => {
+    const whatYouLikeSongs = document.createElement('div')
+    whatYouLikeSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    whatYouLikeSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    moreWhatYouLikeSection.appendChild(whatYouLikeSongs)
+})
+
+const hitsContainer = document.querySelector('#hits-container')
+hits.forEach(song => {
+    const hitsSongs = document.createElement('div')
+    hitsSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    hitsSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    hitsContainer.appendChild(hitsSongs)
+})
+
+const bestOf2020Container = document.querySelector('#best-of-2020')
+bestOf2020.forEach(song => {
+    const hitsSongs = document.createElement('div')
+    hitsSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    hitsSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    bestOf2020Container.appendChild(hitsSongs)
+})
+
 const favouriteSongs = [
     {
         name: '',
