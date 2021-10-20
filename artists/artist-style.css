@@ -20,6 +20,17 @@
   );
 }
 
+.album-img-header {
+  height: 500px;
+}
+
+.album-header-image {
+  background-image: url(../assets/queen1.jpg);
+  height: 100%;
+  padding: 1.25rem;
+  background-position: center;
+}
+
 .album-top-bg-image {
   background-image: url(../assets/queen1.jpg);
   min-height: 100%;
