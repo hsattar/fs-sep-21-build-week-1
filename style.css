@@ -12,6 +12,7 @@
   --card-wrapper-bg: #5554545e;
   --recently-played: #3e3e3e;
   --good-morning: #3c0908;
+  --sidebar-selected: #b3b3b3;
   /* --new-color: red; */
 }
 
@@ -38,12 +39,8 @@ body {
   text-align: center;
 }
 
-.side-bar {
-  overflow: scroll;
-}
-
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -99,14 +96,23 @@ div.triangle {
 }
 
 .side-bar {
+  height: 100%;
+  width: 232px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
   background-color: var(--black);
-  overflow: hidden;
-  min-height: 100vh;
 }
 
 .side-bar img {
   margin-top: 15px;
 }
+
 .side-bar a {
   color: var(--light-gray);
   padding: 0.25rem 0.5rem;
@@ -114,7 +120,7 @@ div.triangle {
 }
 
 .side-bar a.selected {
-  background-color: var(--light-gray);
+  background-color: var(--sidebar-selected);
   color: var(--dark-black);
 }
 
@@ -124,7 +130,7 @@ div.triangle {
 
 .side-bar a:hover:not(:first-child) {
   cursor: pointer;
-  background-color: var(--light-gray);
+  background-color: var(--sidebar-selected);
   color: var(--dark-black);
 }
 
@@ -282,7 +288,7 @@ button.btn.bg-black {
 .hp-subhero-card:hover {
   background-color: #252525;
   transform: scale(1.1);
-  z-index: 1;
+  z-index: 3;
   background-color: var(--dark-gray);
   cursor: pointer;
 }
@@ -301,6 +307,7 @@ button.btn.bg-black {
   background: var(--dark-black);
   padding: 1rem;
   padding-bottom: 0.5rem;
+  z-index: 2;
 }
 
 .music-controls img {
