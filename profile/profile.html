@@ -134,36 +134,41 @@
                               <img src="../assets/profile.jpg.jpg" class="rounded-circle profile-picture img-fluid" alt="">
                             </div>
                             <div class="label-name col-3 d-flex flex-column">
-                              <label for="name" class="text-light">Name: Ali</label>
+                              <label for="name" class="text-light">Name:</label>
+                              <p class="name">Ali</p>
+                              <div class="text-label" ></div>
                               <div class="input-group flex-nowrap">
                                 <div class="input-group-prepend">
                                 </div>
                                 <input type="text" class="form-control" placeholder="Enter your name" aria-label="name" aria-describedby="addon-wrapping" required>
                               </div>
-                              <button type="button" class="add-name btn btn-success">Edit name</button>
-                              <label for="password" class="mt-5 text-light">Password: *********</label>
+                              <button type="button" class="edit-info btn btn-success" onclick="changeName(event)">Edit name</button>
+                              <label for="password" class="mt-5 text-light">Password: </label>
+                              <p class="password">*********</p>
                               <div class="input-group flex-nowrap">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="password" class="form-control" placeholder="Enter your password" aria-label="Username" aria-describedby="addon-wrapping">
+                                <input type="password" class="form-control form2" placeholder="Enter your password" aria-label="password" aria-describedby="addon-wrapping">
                               </div>
-                              <button type="button" class="mt-2 add-password btn btn-success">Edit password</button>
+                              <button type="button" class="mt-2 edit-info btn btn-success" onclick="changePassword(event)">Edit password</button>
                             </div>
                             <div class="label-name col-3 d-flex flex-column">
-                              <label for="email" class="text-light">Email: James1999007@gmail.com</label>
+                              <label for="email" class="text-light">Email:</label>
+                              <p class="email">James1999007@gmail.com</p>
                               <div class="input-group flex-nowrap">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Username" aria-describedby="addon-wrapping">
+                                <input type="email" class="form-control form3" placeholder="Enter your email" aria-label="Username" aria-describedby="addon-wrapping">
                               </div>
-                              <button type="button" class="add-name btn btn-success">Edit email</button>
-                              <label for="age" class="mt-5 text-light">Age: 22</label>
+                              <button type="button" class="edit-info btn btn-success" onclick="changeEmail(event)">Edit email</button>
+                              <label for="age" class="mt-5 text-light">Age:</label>
+                              <p class="age">22</p>
                               <div class="input-group flex-nowrap">
                                 <div class="input-group-prepend">
                                 </div>
-                                <input type="number" class="form-control" placeholder="Select your age" aria-label="Username" aria-describedby="addon-wrapping">
+                                <input type="number" class="form-control form4" placeholder="Select your age" aria-label="Username" aria-describedby="addon-wrapping">
                               </div>
-                              <button type="button" class="mt-2 add-password btn btn-success">Edit age</button>
+                              <button type="button" class="mt-2 edit-info btn btn-success" onclick="changeAge(event)">Edit age</button>
                             </div>
                           </div>   
                 </div>
