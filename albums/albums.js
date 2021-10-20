@@ -86,6 +86,12 @@ heart.addEventListener('click', () => {
 const songInfo = document.querySelectorAll('.song-info')
 songInfo.forEach(song => {
     song.addEventListener('click', e => {
-        console.log(e.currentTarget)
+        if (song.classList.contains('selected-song')) {
+            song.classList.remove('selected-song')
+        }
+        const songInformation = e.currentTarget
+        songInformation.classList.add('selected-song')
+        const songTitle = document.querySelector('.selected-song div:nth-child(2)')
+        console.log(songTitle)
     })
 })
