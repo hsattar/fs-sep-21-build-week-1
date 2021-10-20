@@ -35,6 +35,7 @@
 .album-img {
   height: 250px;
   display: flex;
+  max-width: 240px;
 }
 .album-img img {
   width: 240px;
