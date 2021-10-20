@@ -24,7 +24,7 @@
                 <div class="col-2 d-none d-xl-block">
                     <div class="row">
                         <div class="side-bar col-12 px-0">
-                            <a href="index.html"><img class="spotify-logo" src="../assets/spotlogo.jpg" alt="sidebar-logo"></a>
+                            <a href="index.html"><img class="spotify-logo mt-0" src="../assets/spotify-logo.png" alt="sidebar-logo"></a>
                             
                             <a href="index.html" class="d-flex selected py-2">
                                 <i class="bi bi-house-door mx-3"></i>
@@ -55,8 +55,6 @@
                                 <i class="bi bi-heart-fill mx-3"></i>
                                 <p>Liked Songs</p>
                             </a> 
-                            
-                            <button class="btn btn-dark" id="toggle-theme">Toggle Theme</button>
 
                             <hr class="border-secondary">
                             <div class="other-links">
@@ -76,7 +74,7 @@
                                 <p>New Playlist</p>
                                 <p>Your Top Songs 2018</p>
                                 <p>Jazz Classics Blue Note...</p>
-                                <p class="text-muted"><i class="bi bi-arrow-down-circle"> </i>Install app</p>
+                                <p class="light-gray-text"><i class="bi bi-arrow-down-circle"> </i>Install app</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +130,7 @@
 
                     <div class="row">
                         <div class="col-12 hp-hero pt-2">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-none d-md-flex justify-content-between">
                                 <div class="d-flex mb-3">
                                     <div class="d-flex hp-hero-top circle-top mr-3">
                                         <div class="triangle-top-l"></div>
@@ -153,7 +151,7 @@
                                             </svg> Your Name
                                         </button>
                                         <div class="dropdown-menu">
-                                            ...
+                                            <p id="toggle-theme" class="mb-0">Change Theme</p>
                                         </div>
                                     </div>
                                 </div>
@@ -174,423 +172,83 @@
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>Recently played</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
-
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/48.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">                                        
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/35.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/46.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/40.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
-                                    <img src="/assets/cards/41.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/49.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/51.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/52.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="recently-played-section">
                             </div>
 
                         </div>
-                        
-
-                        
-
                     </div>
+
                     <!-- REMAING PAGE CONTENT ENDS HERE -->
                     <div class="row" id="showstotry">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>Shows to try</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
-
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/1.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/2.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/3.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/4.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/15.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/6.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/7.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/8.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="shows-to-try">
                             </div>
 
                         </div>
                         
-
-                        
-
                     </div>
+
                     <div class="row" id="moreofyoulike">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>More of what you like</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
-
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/9.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/10.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/11.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/12.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/13.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/14.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/15.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/16.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="more-what-you-like">
                             </div>
 
                         </div>
-                        
-
-                        
 
                     </div>
+
                     <div class="row" id="hits">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>Hits</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
-
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/17.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/18.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/1.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/20.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/21.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/22.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/23.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/24.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="hits-container">
                             </div>
 
                         </div>
-                        
-
-                        
 
                     </div>
+
                     <div class="row" id="bestof">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>The best of 2020</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
 
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/25.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/26.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/27.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/28.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/29.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/30.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/31.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/33.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="best-of-2020">
                             </div>
 
                         </div>
-                        
-
-                        
 
                     </div>
+
                     <div class="row" id="jumpback">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>Jump back in</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
 
@@ -673,7 +331,7 @@
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
                                 <h4>For funs of Sanah</h4>
-                                <p class="hp-tag text-muted font-weight-bold">SEE ALL</p>
+                                <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
 

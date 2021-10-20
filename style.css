@@ -9,6 +9,9 @@
   --white: #fff;
   --sidebar-text-color: #a0a0a0;
   --black: #000;
+  --card-wrapper-bg: #5554545e;
+  --recently-played: #3e3e3e;
+  --good-morning: #3c0908;
   /* --new-color: red; */
 }
 
@@ -180,11 +183,7 @@ div.triangle-top-l {
 .hp-hero {
   min-height: 35vh;
   background: rgb(60, 9, 8);
-  background: linear-gradient(
-    180deg,
-    rgba(60, 9, 8, 1) 0%,
-    rgba(0, 0, 0, 1) 67%
-  );
+  background: linear-gradient(180deg, var(--good-morning) 0%, var(--black) 67%);
 }
 
 .good-morning-container img {
@@ -198,13 +197,25 @@ div.triangle-top-l {
 }
 
 .good-morning-container .card-wrapper {
-  background-color: #5554545e;
+  background-color: var(--card-wrapper-bg);
   width: 100%;
 }
 
 .good-morning-container .card-wrapper:hover {
   border: 2px solid var(--light-green);
   cursor: pointer;
+}
+
+#toggle-theme {
+  color: var(--white);
+}
+
+#toggle-theme:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  background-color: var(--dark-black);
 }
 
 button.btn.bg-black {
@@ -234,6 +245,7 @@ button.btn.bg-black {
 
 .hp-subhero-subtitle {
   font-size: small;
+  color: var(--light-gray);
 }
 
 /* ----------------------------------------------- ALBUM & ARTIST PAGE STYLING ----------------------------------------------- */
@@ -271,6 +283,8 @@ button.btn.bg-black {
   background-color: #252525;
   transform: scale(1.1);
   z-index: 1;
+  background-color: var(--dark-gray);
+  cursor: pointer;
 }
 
 #showstotry img {
@@ -310,4 +324,3 @@ button.btn.bg-black {
   background-color: var(--light-gray);
   border-radius: 300px;
 }
-
