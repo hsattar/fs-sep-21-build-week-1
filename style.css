@@ -97,7 +97,7 @@ div.triangle {
 
 .side-bar {
   height: 100%;
-  width: 232px;
+  width: 17%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -331,3 +331,9 @@ button.btn.bg-black {
   background-color: var(--light-gray);
   border-radius: 300px;
 }
+
+/* @media screen and (max-width: 996px) {
+  .side-bar {
+    width: 151px;
+  }
+} */
