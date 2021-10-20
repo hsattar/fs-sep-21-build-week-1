@@ -83,9 +83,9 @@ heart.addEventListener('click', () => {
     heartClicks++
 })
 
-// const songInfo = document.querySelectorAll('.song-info')
-// songInfo.forEach(song => {
-//     song.addEventListener('mouseover', () => {
-//         song.className = 'row song-info light-green-text'
-//     })
-// })
+const songInfo = document.querySelectorAll('.song-info')
+songInfo.forEach(song => {
+    song.addEventListener('click', e => {
+        console.log(e.currentTarget)
+    })
+})
