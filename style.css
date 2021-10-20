@@ -95,6 +95,7 @@ div.triangle {
 
 .spotify-logo {
   max-width: 90%;
+  margin-top: -25px;
 }
 
 .side-bar {
@@ -109,10 +110,6 @@ div.triangle {
   overflow-x: hidden;
   padding-top: 20px;
   background-color: var(--black);
-}
-
-.side-bar img {
-  margin-top: 15px;
 }
 
 .side-bar a {
@@ -136,13 +133,15 @@ div.triangle {
   color: var(--dark-black);
 }
 
-.side-bar .other-links a {
+.side-bar .other-links a,
+.side-bar .other-links p {
   color: var(--sidebar-other);
   margin-left: 1.5rem;
   font-size: 0.85rem;
 }
 
-.side-bar .other-links a:hover {
+.side-bar .other-links a:hover,
+.side-bar .other-links p:hover {
   color: var(--sidebar-other-hover);
   cursor: pointer;
   background-color: var(--black);
