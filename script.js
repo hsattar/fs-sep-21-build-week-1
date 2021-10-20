@@ -236,6 +236,32 @@ bestOf2020.forEach(song => {
     bestOf2020Container.appendChild(hitsSongs)
 })
 
+const jumpInContainer = document.querySelector('#jump-in-container')
+jumpBack.forEach(song => {
+    const jumpBackSongs = document.createElement('div')
+    jumpBackSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    jumpBackSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    jumpInContainer.appendChild(jumpBackSongs)
+})
+
+const sanahFansContainer = document.querySelector('#sanah-fans-container')
+fansOfSanah.forEach(song => {
+    const sanahFansSongs = document.createElement('div')
+    sanahFansSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    sanahFansSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    sanahFansContainer.appendChild(sanahFansSongs)
+})
+
 const favouriteSongs = [
     {
         name: '',
