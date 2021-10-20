@@ -17,3 +17,11 @@ body {
     background-color: var(--light-gray);
     color: black;
 }
+
+.displaynone {
+    display: none!important;
+}
+
+.display {
+    display: block;
+}
