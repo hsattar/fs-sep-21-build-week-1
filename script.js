@@ -208,6 +208,7 @@ moreWhatYouLike.forEach(song => {
     whatYouLikeSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
     whatYouLikeSongs.innerHTML = `
     <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="buttoncard"></div>
     <div class="card-body">
         <p class="hp-subhero-title">Purple Rain</p>
         <p class="hp-subhero-subtitle">Another song from my soul</p>
@@ -234,6 +235,7 @@ bestOf2020.forEach(song => {
     hitsSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
     hitsSongs.innerHTML = `
     <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="buttoncard"></div>
     <div class="card-body">
         <p class="hp-subhero-title">Purple Rain</p>
         <p class="hp-subhero-subtitle">Another song from my soul</p>
