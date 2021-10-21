@@ -38,9 +38,35 @@ h3:hover {
 }
 
 .styleSection#rockStyle {
-    background-image: url("/assets/background-genre/rock.jpg");
+    background: linear-gradient( 180deg, rgba(116, 79, 79, 1) 0%, rgba(0, 0, 0, 0.7) 60%), url("/assets/background-genre/rock\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .styleSection#undergroundStyle {
-    background-image: url("/assets/background-genre/underground.jpg");
+    background: linear-gradient( 180deg, rgba(116, 79, 79, 1) 0%, rgba(0, 0, 0, 0.7) 60%), url("/assets/background-genre/underground.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.styleSection#rebStyle {
+    background: linear-gradient( 180deg, rgba(116, 79, 79, 1) 0%, rgba(0, 0, 0, 0.7) 60%), url("/assets/background-genre/r&b.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.styleSection#jazzStyle {
+    background: linear-gradient( 180deg, rgba(116, 79, 79, 1) 0%, rgba(0, 0, 0, 0.7) 60%), url("/assets/background-genre/jazz.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.styleSection#modernStyle {
+    background: linear-gradient( 180deg, rgba(116, 79, 79, 1) 0%, rgba(0, 0, 0, 0.7) 60%), url("/assets/background-genre/rock.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+div.styleSection div.hp-card:hover {
+    background-color: var(--dark-black);
 }

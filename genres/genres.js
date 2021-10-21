@@ -6,8 +6,9 @@ let btnModern = document.getElementById("modern")
 
 let rockSection = document.getElementById("rockStyle")
 let underSection = document.getElementById("undergroundStyle")
-let rebSection = document.getElementById("r&bStyle")
+let rebSection = document.getElementById("rebStyle")
 let jazzSection = document.getElementById("jazzStyle")
+let modernSection = document.getElementById("modernStyle")
 
 btnRock.addEventListener("click", function() {
     rockSection.classList.toggle("displaynone")
@@ -23,5 +24,9 @@ btnUnderground.addEventListener("click", function() {
 })
 btnJazz.addEventListener("click", function() {
     jazzSection.classList.toggle("displaynone")
+
+})
+btnModern.addEventListener("click", function() {
+    modernSection.classList.toggle("displaynone")
 
 })
