@@ -46,29 +46,7 @@ const albumSongs = [
     }    
 ]
 
-const albumSongsContainer = document.querySelector('#album-songs-container')
 
-for (let i = 0; i < albumSongs.length; i++) {
-    const songRow = document.createElement('div')
-    songRow.innerHTML = `
-    <div class="row song-info">
-                    
-        <div class="col-1 light-gray-text">
-            <p>${i + 1}</p>
-        </div>
-
-        <div class="col-10">
-            <p class="my-0 font-weight-bold">${albumSongs[i].title}</p>
-            <p class="mt-0 mb-2 smaller-text light-gray-text">${albumSongs[i].artist}</p>
-        </div>
-
-        <div class="col-1 light-gray-text">
-            <p>${albumSongs[i].duration}</p>
-        </div>
-    
-    </div>`
-    albumSongsContainer.appendChild(songRow)
-}
 
 const heart = document.querySelector('.bi-heart')
 let heartClicks = 0
@@ -95,6 +73,8 @@ songInfo.forEach(song => {
         console.log(songTitle)
     })
 })
+
+
 
 
 const album2 = [
@@ -192,3 +172,47 @@ const album3 = [
         duration: '2:43'
     }    
 ]
+
+
+
+
+
+const albumSongsContainer = document.querySelector('#album-songs-container')
+let albumChoices = [
+    'albumSongs',
+     'album2',
+     'album3'
+] 
+let currentAlbum = albumChoices[0]
+
+for (let i = 0; i < currentAlbum.length; i++) {
+    const songRow = document.createElement('div')
+    songRow.innerHTML = `
+    <div class="row song-info">
+                    
+        <div class="col-1 light-gray-text">
+            <p>${i + 1}</p>
+        </div>
+
+        <div class="col-10">
+            <p class="my-0 font-weight-bold">${currentAlbum[i].title}</p>
+            <p class="mt-0 mb-2 smaller-text light-gray-text">${currentAlbum[i].artist}</p>
+        </div>
+
+        <div class="col-1 light-gray-text">
+            <p>${currentAlbum[i].duration}</p>
+        </div>
+    
+    </div>`
+    albumSongsContainer.appendChild(songRow)
+}
+
+
+const carRightButton = document.querySelector('.carousel-control-next')
+carRightButton.addEventListener("click", function(){
+   songRow.appendChild(currentAlbum[1])
+
+
+
+
+})
