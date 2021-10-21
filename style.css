@@ -268,7 +268,6 @@ button.btn.bg-black {
 .hp-subhero-card {
   background-color: var(--dark-black);
   position: relative;
-  
 }
 
 .hp-subhero-title {
@@ -379,45 +378,36 @@ button.btn.bg-black {
     padding-bottom: 115px;
   }
 }
-.buttoncard{
+
+.buttoncard {
   height: 40px;
   width: 40px;
-  background-color:#6CC04A;
+  background-color: #6cc04a;
   border-radius: 50%;
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease;
   right: 25px;
   bottom: 110px;
-  
-  
-  
-  
-
-
 }
-.buttoncard::before{
+.buttoncard::before {
   content: "";
   position: absolute;
   width: 0;
-  height: 0;  
+  height: 0;
   top: 0;
   bottom: 0;
   right: 0;
   left: 3px;
   margin: auto;
-  border-style:solid;
+  border-style: solid;
   border-width: 7px 0 7px 13px;
   border-color: transparent transparent transparent white;
-
-
 }
 .hp-subhero-card:hover .buttoncard {
   opacity: 1;
   transition-delay: 0.1s;
-
-
 }
-.buttoncard:hover{
+.buttoncard:hover {
   transform: scale(1.1);
 }
