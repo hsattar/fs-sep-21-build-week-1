@@ -16,9 +16,9 @@
 }
 
 body {
-    background-color: var(--light-black);
-    color: var(--sidebar-text-color);
-    font-size: small;
+  background-color: var(--light-black);
+  color: var(--white);
+  font-size: small;
 }
 
 .light-green-text {
