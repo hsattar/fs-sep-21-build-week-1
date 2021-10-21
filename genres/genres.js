@@ -10,8 +10,10 @@ let rebSection = document.getElementById("rebStyle")
 let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
-let icondpurpletHeart = document.getElementsByClassName("dpurpletHeart").classList.contains("bi-heart")
+let icondpurpletHeart = document.getElementsByClassName("dpurpletHeart")
+console.log(icondpurpletHeart)
 
+.classList.contains("bi-heart")
 let icondoorstHeart = document.getElementsByClassName("doorstHeart").classList.contains("bi-heart")
 let iconledZep = document.getElementsByClassName("ledZep").classList.contains("bi-heart")
 let iconwho = document.getElementsByClassName("who").classList.contains("bi-heart")
@@ -88,11 +90,12 @@ btnModern.addEventListener("click", function() {
 
 // == select song as favourite
 //let heartIcons = document.querySelector("i")
+//let classActive = icondoorstHeart.classList.contains("bi-heart")
 
 
-let classActive = heartIcons.classList.contains("bi-heart")
 
 let addFavouritTotheList = function() {
+
     if (classActive) { //if the preferred heart is false
         heartIcons.classList.remove("bi-heart"); //  we change class of heart
         heartIcons.classList.add("bi-heart-fill") // ==========================
