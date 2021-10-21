@@ -391,7 +391,7 @@ button.btn.bg-black {
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease;
-  right: 25px;
+  right: 20px;
   bottom: 125px;
 }
 .buttoncard::before {
