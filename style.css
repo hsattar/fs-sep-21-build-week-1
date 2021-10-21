@@ -225,6 +225,7 @@ button.btn.bg-black {
 .hp-subhero-card {
   background-color: var(--dark-black);
   position: relative;
+  
 }
 
 .hp-subhero-title {
@@ -317,10 +318,12 @@ button.btn.bg-black {
   width: 40px;
   background-color:#6CC04A;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease;
-  bottom: 50px;
+  right: 25px;
+  bottom: 110px;
+  
   
   
   
