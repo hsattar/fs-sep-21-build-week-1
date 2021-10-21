@@ -77,21 +77,21 @@ let heartIcons = document.getElementById("firstHeart")
 
 heartIcons.addEventListener("click", function(e) {
     let classActive = heartIcons.classList.contains("bi-heart")
-    if (classActive) {
-        heartIcons.classList.remove("bi-heart");
-        heartIcons.classList.add("bi-heart-fill")
-        let favSong = this.previousElementSibling;
-        let selectedElement = favSong.innerHTML;
-        arrFavSong.push(selectedElement)
-        console.log(arrFavSong)
+    if (classActive) { //if the preferred heart is false
+        heartIcons.classList.remove("bi-heart"); //  we change class of heart
+        heartIcons.classList.add("bi-heart-fill") // ==========================
+        let favSong = this.previousElementSibling; // here we select the favourite song and his content
+        let selectedElement = favSong.innerHTML; //==============================================
+        arrFavSong.push(selectedElement) // here we add the son at the array of favourite song reay to be show
+        console.log(arrFavSong) // ===========================================
     } else if (!classActive) {
-        heartIcons.classList.remove("bi-heart-fill");
-        heartIcons.classList.add("bi-heart")
-        let favSong = this.previousElementSibling;
-        let selectedElement = favSong.innerHTML;
-        let index = arrFavSong.indexOf(selectedElement)
-        if (index >= 0) {
-            arrFavSong.splice(index)
+        heartIcons.classList.remove("bi-heart-fill"); //if the preferred heart is true
+        heartIcons.classList.add("bi-heart") //  we change class of heart
+        let favSong = this.previousElementSibling; // here we select the favourite song and his content
+        let selectedElement = favSong.innerHTML; //==============================================
+        let index = arrFavSong.indexOf(selectedElement) // here we check if the song is into the array
+        if (index >= 0) { // if it's true
+            arrFavSong.splice(index) // we delete the song
         }
         console.log(arrFavSong)
     }
