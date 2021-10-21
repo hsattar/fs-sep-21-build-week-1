@@ -7,32 +7,17 @@
   margin-bottom: 1rem;
 }
 
-.bg-wrapper {
-  background: rgb(42, 42, 42);
-  background: linear-gradient(
-    0deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(42, 42, 42, 1) 48%,
-    rgba(42, 42, 42, 1) 68%,
-    rgba(104, 22, 76, 1) 100%,
-    rgba(148, 8, 100, 1) 100%,
-    rgba(148, 8, 100, 1) 100%
-  );
-}
-
-.album-top-bg-image {
-  background-image: url(../assets/queen1.jpg);
-  min-height: 100%;
-  background-repeat: no-repeat;
-  padding: 1.25rem;
-  object-fit: cover;
-  background-position: center;
-}
-.album-img-container {
-  position: relative;
-  width: 100%;
+.album-img-header {
   height: 500px;
 }
+
+.album-header-image {
+  background-image: url(../assets/queen1.jpg);
+  height: 100%;
+  padding: 1.25rem;
+  background-position: center;
+}
+
 .album-info {
   position: absolute;
   bottom: 10px;
@@ -66,16 +51,36 @@
   font-weight: bold;
 }
 
+.album-header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(42, 42, 42);
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 42, 42, 0) 0%,
+    rgba(42, 42, 42, 0) 48%,
+    rgba(42, 42, 42, 0) 84%,
+    #706f708e 90%,
+    #706f70c3 99%,
+    #706f70 100%
+  );
+}
+
 .bg-wrapper {
   background: rgb(42, 42, 42);
   background: linear-gradient(
     0deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(42, 42, 42, 1) 48%,
-    rgba(42, 42, 42, 1) 50%,
-    rgb(95, 94, 95) 100%,
-    rgb(114, 112, 113) 100%,
-    rgb(112, 111, 112) 100%
+    #2a2a2a 0%,
+    #2a2a2a 48%,
+    #2a2a2a 60%,
+    #505050 100%,
+    #727071 100%,
+    #706f70 100%
   );
 }
 
@@ -90,4 +95,9 @@
 .posted-by img {
   height: 20px;
   border-radius: 50%;
+}
+
+* {
+  overflow: hidden;
+  overflow-y: scroll;
 }

@@ -24,14 +24,14 @@
                 <div class="col-2 d-none d-xl-block">
                     <div class="row">
                         <div class="side-bar col-12 px-0">
-                            <a href="index.html"><img class="spotify-logo mt-0" src="../assets/spotify-logo.png" alt="sidebar-logo"></a>
+                            <a href="index.html"><img class="spotify-logo" src="../assets/spotify-logo.png" alt="sidebar-logo"></a>
                             
                             <a href="index.html" class="d-flex selected py-2">
                                 <i class="bi bi-house-door mx-3"></i>
                                 <p>Home</p>
                             </a> 
                             
-                            <a href="#" class="d-flex py-2">
+                            <a href="./genres/genres.html" class="d-flex py-2">
                                 <i class="bi bi-collection-play mx-3"></i>
                                 <p>Your Library</p>
                             </a> 
@@ -51,30 +51,29 @@
                                 <p>Create Playlist</p>
                             </a> 
 
-                            <a href="#" class="d-flex py-2">
+                            <a href="./favourites/favourites.html" class="d-flex py-2">
                                 <i class="bi bi-heart-fill mx-3"></i>
                                 <p>Liked Songs</p>
                             </a> 
 
                             <hr class="border-secondary">
-                            <div class="other-links">
-                                <p>Funky Heavy Bluesy</p>
-                                <p>Your Top songs 2020</p>
-                                <p>In Love With You-Erykah B..</p>
-                                <p>This is road Stewart</p>
-                                <p>FRANCHISE ft.Young Thig...</p>
-                                <p>Your Top Songs 2019</p>
-                                <p>Pallegio</p>
-                                <p>This is Joe Bonamassa</p>
-                                <p>June 2019</p>
-                                <p>Jack 30th Party 2<i class="ml-5 text-right bi bi-person-lines-fill"></i></p>
-                                <p>Jack 30th Party<i class="ml-5 text-right bi bi-person-lines-fill"></i></p>
-                                <p>This is Opeth</p>
-                                <p>Metal Ballades</p>
-                                <p>New Playlist</p>
-                                <p>Your Top Songs 2018</p>
-                                <p>Jazz Classics Blue Note...</p>
-                                <p class="light-gray-text"><i class="bi bi-arrow-down-circle"> </i>Install app</p>
+                            <div class="other-links d-flex flex-column">
+                                <a href="#good-morning-h3">Good Morning</a>
+                                <a href="#recently-played-h4">Recently Played</a>
+                                <a href="#shows-to-try-h4">Shows To Try</a>
+                                <a href="#more-of-what-you-like-h4">More Of What You Like</a>
+                                <a href="#hits-h4">Hits</a>
+                                <a href="#the-best-of-2020-h4">The Best of 2020</a>
+                                <a href="#jump-back-in-h4">Jump Back In</a>
+                                <a href="#for-fans-of-sanah-h4">For Fans Of Sanah</a>
+                                <a href="#">Your Top songs 2020</a>
+                                <a href="#">In Love With You-Erykah B..</a>
+                                <a href="#">FRANCHISE ft.Young Thig...</a>
+                                <a href="#">This is road Stewart</a>
+                                <a href="#">Your Top Songs 2019</a>
+                                <a href="#">Metal Ballades</a>
+                                <a href="#">Jazz Classics Blue Note...</a>
+                                <a href="#" class="light-gray-text"><i class="bi bi-arrow-down-circle"> </i>Install app</a>
                             </div>
                         </div>
                     </div>
@@ -86,14 +85,14 @@
                 <div class="col-2 d-none d-lg-block d-xl-none">
                     <div class="row">
                         <div class="side-bar col-12 text-light px-0">
-                            <a href="index.html"><img class="spotify-logo" src="../assets/spotlogo.jpg" alt="sidebar-logo"></a>
+                            <a href="index.html"><img class="spotify-logo" src="../assets/spotify-logo.png" alt="sidebar-logo"></a>
                             
                             <a href="index.html" class="d-flex flex-column selected py-2 align-items-center justify-content-center">
                                 <i class="bi bi-house-door"></i>
                                 <p class="mx-0">Home</p>
                             </a> 
                             
-                            <a href="#" class="d-flex flex-column py-2 align-items-center justify-content-center">
+                            <a href="./genres/genres.html" class="d-flex flex-column py-2 align-items-center justify-content-center">
                                 <i class="bi bi-collection-play"></i>
                                 <p class="mx-0">Your Library</p>
                             </a> 
@@ -113,7 +112,7 @@
                                 <p class="mx-0">Create Playlist</p>
                             </a> 
 
-                            <a href="#" class="d-flex flex-column py-2 align-items-center justify-content-center">
+                            <a href="./favourites/favourites.html" class="d-flex flex-column py-2 align-items-center justify-content-center">
                                 <i class="bi bi-heart-fill"></i>
                                 <p class="mx-0">Liked Songs</p>
                             </a> 
@@ -126,7 +125,7 @@
 
 
                 <!-- MAIN PAGE CONTENT  -->
-                <div class="col-12 col-lg-10">
+                <div class="col-12 col-lg-10 main-page-content">
 
                     <div class="row">
                         <div class="col-12 hp-hero pt-2">
@@ -157,7 +156,7 @@
                                 </div>
                             </div>
 
-                            <h3>Good morning</h3>
+                            <h3 id="good-morning-h3">Good morning</h3>
 
                             <div class="good-morning-container row">
 
@@ -171,7 +170,7 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>Recently played</h4>
+                                <h4 id="recently-played-h4">Recently played</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
@@ -186,7 +185,7 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>Shows to try</h4>
+                                <h4 id="shows-to-try-h4">Shows to try</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
@@ -201,7 +200,7 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>More of what you like</h4>
+                                <h4 id="more-of-what-you-like-h4">More of what you like</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
@@ -216,7 +215,7 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>Hits</h4>
+                                <h4 id="hits-h4">Hits</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
@@ -231,7 +230,7 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>The best of 2020</h4>
+                                <h4 id="the-best-of-2020-h4">The best of 2020</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
@@ -247,166 +246,31 @@
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>Jump back in</h4>
+                                <h4 id="jump-back-in-h4">Jump back in</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
 
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/34.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/36.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/37.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/38.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/39.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/60.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/61.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/62.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="jump-in-container">
                             </div>
 
                         </div>
                         
-
-                        
-
                     </div>
+
                     <div class="row" id="fans">
                         <div class="col-12 hp-sub-hero">
 
                             <div class="d-flex justify-content-between mt-4 mb-3">
-                                <h4>For funs of Sanah</h4>
+                                <h4 id="for-fans-of-sanah-h4">For fans of Sanah</h4>
                                 <p class="hp-tag light-gray-text font-weight-bold">SEE ALL</p>
                             </div>
 
 
-                            <div class="row">
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/63.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/64.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/65.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/20.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/41.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                    <img src="/assets/cards/49.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/51.jpg" class="card-img-top pt-2 img-fluid" alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-xl-none d-md-none d-lg-block">
-                                    <img src="/assets/cards/52.jpg" class="card-img-top pt-2 img-fluid " alt="...">
-                                    <div class="card-body">
-                                        <p class="hp-subhero-title">Purple Rain</p>
-                                        <p class="hp-subhero-subtitle">Another song from my soul</p>
-                                    </div>
-                                </div>
-
+                            <div class="row" id="sanah-fans-container">
                             </div>
 
                         </div>
-                        
-
-                        
 
                     </div>
 

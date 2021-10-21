@@ -16,6 +16,9 @@ const toggleTheme = () => {
         root.style.setProperty('--card-wrapper-bg', '#5554545e')
         root.style.setProperty('--recently-played', '#3e3e3e')
         root.style.setProperty('--good-morning', '#3c0908')
+        root.style.setProperty('--sidebar-selected', '#b3b3b3')
+        root.style.setProperty('--sidebar-other', '#b3b3b3')
+        root.style.setProperty('--sidebar-other-hover', '#fff')
         darkTheme = false
     } else {
         root.style.setProperty('--black', '#fff')
@@ -28,7 +31,9 @@ const toggleTheme = () => {
         root.style.setProperty('--card-wrapper-bg', '#b3b3b3')
         root.style.setProperty('--recently-played', '#b3b3b3')
         root.style.setProperty('--good-morning', '#fff')
-
+        root.style.setProperty('--sidebar-selected', '#727272')
+        root.style.setProperty('--sidebar-other', '#2a2a2a')
+        root.style.setProperty('--sidebar-other-hover', '#000')
         darkTheme = true
     }
 }
@@ -233,6 +238,32 @@ bestOf2020.forEach(song => {
         <p class="hp-subhero-subtitle">Another song from my soul</p>
     </div>`
     bestOf2020Container.appendChild(hitsSongs)
+})
+
+const jumpInContainer = document.querySelector('#jump-in-container')
+jumpBack.forEach(song => {
+    const jumpBackSongs = document.createElement('div')
+    jumpBackSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    jumpBackSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    jumpInContainer.appendChild(jumpBackSongs)
+})
+
+const sanahFansContainer = document.querySelector('#sanah-fans-container')
+fansOfSanah.forEach(song => {
+    const sanahFansSongs = document.createElement('div')
+    sanahFansSongs.className = 'card hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'
+    sanahFansSongs.innerHTML = `
+    <img src="${song}" class="card-img-top pt-2 img-fluid" alt="...">
+    <div class="card-body">
+        <p class="hp-subhero-title">Purple Rain</p>
+        <p class="hp-subhero-subtitle">Another song from my soul</p>
+    </div>`
+    sanahFansContainer.appendChild(sanahFansSongs)
 })
 
 const favouriteSongs = [

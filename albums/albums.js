@@ -83,9 +83,15 @@ heart.addEventListener('click', () => {
     heartClicks++
 })
 
-// const songInfo = document.querySelectorAll('.song-info')
-// songInfo.forEach(song => {
-//     song.addEventListener('mouseover', () => {
-//         song.className = 'row song-info light-green-text'
-//     })
-// })
+const songInfo = document.querySelectorAll('.song-info')
+songInfo.forEach(song => {
+    song.addEventListener('click', e => {
+        if (song.classList.contains('selected-song')) {
+            song.classList.remove('selected-song')
+        }
+        const songInformation = e.currentTarget
+        songInformation.classList.add('selected-song')
+        const songTitle = document.querySelector('.selected-song div:nth-child(2)')
+        console.log(songTitle)
+    })
+})
