@@ -8,15 +8,12 @@
 }
 
 .bg-wrapper {
-  background: rgb(42, 42, 42);
+  background: rgb(206, 132, 120);
   background: linear-gradient(
-    0deg,
-    rgba(42, 42, 42, 1) 0%,
-    rgba(42, 42, 42, 1) 48%,
-    rgba(42, 42, 42, 1) 68%,
-    rgba(104, 22, 76, 1) 100%,
-    rgba(148, 8, 100, 1) 100%,
-    rgba(148, 8, 100, 1) 100%
+    180deg,
+    rgba(206, 132, 120, 1) 0%,
+    rgba(206, 132, 120, 1) 5%,
+    rgba(42, 42, 42, 1) 20%
   );
 }
 
@@ -24,11 +21,12 @@
   height: 250px;
   padding-top: 30px;
   transform: scaleY(1.2);
-  background: rgb(102, 23, 75);
+  background: rgb(206, 132, 120);
   background: linear-gradient(
-    0deg,
-    rgba(102, 23, 75, 1) 0%,
-    rgba(148, 36, 116, 1) 76%
+    180deg,
+    rgb(221, 157, 147) 0%,
+    rgba(206, 132, 120, 1) 55%,
+    rgba(206, 132, 120, 1) 88%
   );
 }
 
@@ -94,16 +92,15 @@
   box-shadow: 0px 4px 19px -1px #252525;
 }
 .carasoul-btn1{
-  width: 60px;
+  margin-top: 3px;
+  height: 45px;
+  width: 130px;
+}
+.btn-saved{
+  width: 150px;
+  border-color: white;
 }
 .dot-icon{
   margin-left: 10px;
-  font-size: 25px;
-}
-
-.carasoul-btns{
-  width: 150px;
-}
-.btn-saved{
-  border-color: white;
+  font-size: 35px;
 }
