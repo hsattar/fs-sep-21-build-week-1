@@ -9,11 +9,51 @@ let underSection = document.getElementById("undergroundStyle")
 let rebSection = document.getElementById("rebStyle")
 let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
+const songs = [{
+        id: "r01",
+        genre: "Rock",
+        artist: "Pink Floyd",
+        albumTitle: "Dark Side of the Moon",
+        song: "Money"
+    },
+    {
+        id: "r02",
+        genre: "Rock",
+        artist: "Pink Floyd",
+        albumTitle: "Dark Side of the Moon",
+        song: "On the Run"
+    },
+    {
+        id: "r03",
+        genre: "Rock",
+        artist: "Pink Floyd",
+        albumTitle: "Dark Side of the Moon",
+        song: "Time"
+    },
+    {
+        id: "r04",
+        genre: "Rock",
+        artist: "Pink Floyd",
+        albumTitle: "Dark Side of the Moon",
+        song: "Eclipse"
+    },
+    {
+        id: "r05",
+        genre: "Rock",
+        artist: "Pink Floyd",
+        albumTitle: "Dark Side of the Moon",
+        song: "The great Gig in the Sky"
+    },
+
+
+
+];
+const arrFavSong = []
 
 btnRock.addEventListener("click", function() {
     rockSection.classList.toggle("displaynone")
-
 })
+
 btnREB.addEventListener("click", function() {
     rebSection.classList.toggle("displaynone")
 
@@ -40,12 +80,20 @@ heartIcons.addEventListener("click", function(e) {
     if (classActive) {
         heartIcons.classList.remove("bi-heart");
         heartIcons.classList.add("bi-heart-fill")
-
+        let favSong = this.previousElementSibling;
+        let selectedElement = favSong.innerHTML;
+        arrFavSong.push(selectedElement)
+        console.log(arrFavSong)
     } else if (!classActive) {
         heartIcons.classList.remove("bi-heart-fill");
         heartIcons.classList.add("bi-heart")
+        let favSong = this.previousElementSibling;
+        let selectedElement = favSong.innerHTML;
+        let index = arrFavSong.indexOf(selectedElement)
+        if (index >= 0) {
+            arrFavSong.splice(index)
+        }
+        console.log(arrFavSong)
     }
-
-
 
 })

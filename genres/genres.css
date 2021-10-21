@@ -70,3 +70,8 @@ h3:hover {
 div.styleSection div.hp-card:hover {
     background-color: var(--dark-black);
 }
+
+.bg-songLibrary {
+    background: rgb(42, 42, 42);
+    background: linear-gradient( 0deg, rgba(42, 42, 42, 1) 0%, rgba(148, 8, 100, 1) 100%, rgba(148, 8, 100, 1) 100%);
+}
