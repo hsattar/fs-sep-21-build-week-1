@@ -1,19 +1,27 @@
-.profile-picture{
-    /* width: 200px; */
-    margin-top: 50px;
-    /* margin-left: 25px; */
-  }
-  .label-name{
-    margin-top: 70px;
-    margin-left: 50px;
-  }
-  .form-control{
-    background-color: var(--dark-black);
-    border: none;
-    outline: none;
-  }
-  .edit-info{
+/* .profile-picture {
+  margin-top: 50px;
+} */
 
-    margin-left: 10px;
-  }
- 
+/* .label-name {
+  margin-top: 70px;
+  margin-left: 50px;
+} */
+
+.form-control {
+  background-color: var(--dark-black);
+  border: none;
+  outline: none;
+}
+
+.edit-info {
+  margin-left: 10px;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 50%;
+}
+
+.normal-text {
+  font-size: 1.25rem;
+}
