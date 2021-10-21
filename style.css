@@ -432,3 +432,33 @@ button.btn.bg-black {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
+
+#showstotry .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#moreofyoulike .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#hits .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#bestof .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#jumpback .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+#fans .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+
+}
