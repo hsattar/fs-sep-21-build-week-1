@@ -58,7 +58,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgb(42, 42, 42);
+  /* background: rgb(42, 42, 42);
   background: rgb(42, 42, 42);
   background: linear-gradient(
     180deg,
@@ -68,7 +68,7 @@
     #706f708e 90%,
     #706f70c3 99%,
     #706f70 100%
-  );
+  ); */
 }
 
 .bg-wrapper {
@@ -80,8 +80,11 @@
     #2a2a2a 60%,
     #505050 100%,
     #727071 100%,
-    #706f70 100%
+    #706f70f3 100%
   );
+
+  /* background: rgb(31,31,31);
+background: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(12, 11, 11, 0.609) 76%); */
 }
 
 .artist-song-img {
@@ -100,4 +103,9 @@
 * {
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.verified-artist-badge{
+  display: flex;
+  align-items: center;
 }

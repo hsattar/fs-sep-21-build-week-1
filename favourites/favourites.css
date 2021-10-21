@@ -2,10 +2,15 @@ body{
     background: rgb(15,15,15);
     background: linear-gradient(0deg, rgba(15,15,15,1) 0%, rgba(25,17,48,1) 76%);
 }
+
+.favourite-page-content{
+    height: 100vh;
+
+}
 #favourite-header{
     background: rgb(33, 28, 46);
 background: linear-gradient(0deg, rgba(18, 15, 25, 0.705) 0%, rgba(58,34,129,1) 76%);
-    height: 400px;
+    height: 300px;
 }
 
 #favourite-header .song-img{
@@ -33,4 +38,24 @@ background: linear-gradient(0deg, rgba(18, 15, 25, 0.705) 0%, rgba(58,34,129,1) 
     font-weight: 700;
 }
 
+.song-info .num-order{
+    max-width: 40px;
+    display: flex;
+    align-items: center;
+}
 
+.list-song-img{
+    max-width: 40px;
+    padding: 0;
+}
+
+.list-song-img img{
+    height: 40px;
+}
+
+
+/* SIDEBAR */
+.install-app-link{
+    position: relative;
+    top: 55vh;
+}
