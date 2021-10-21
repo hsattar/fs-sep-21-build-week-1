@@ -183,9 +183,9 @@ let albumChoices = [
      'album2',
      'album3'
 ] 
-let currentAlbum = albumChoices[0]
+let currentAlbum = 0
 
-for (let i = 0; i < currentAlbum.length; i++) {
+for (let i = 0; i < albumChoices[currentAlbum].length; i++) {
     const songRow = document.createElement('div')
     songRow.innerHTML = `
     <div class="row song-info">
@@ -195,12 +195,12 @@ for (let i = 0; i < currentAlbum.length; i++) {
         </div>
 
         <div class="col-10">
-            <p class="my-0 font-weight-bold">${currentAlbum[i].title}</p>
-            <p class="mt-0 mb-2 smaller-text light-gray-text">${currentAlbum[i].artist}</p>
+            <p class="my-0 font-weight-bold">${ albumChoices[currentAlbum][i].title}</p>
+            <p class="mt-0 mb-2 smaller-text light-gray-text">${ albumChoices[currentAlbum][i].artist}</p>
         </div>
 
         <div class="col-1 light-gray-text">
-            <p>${currentAlbum[i].duration}</p>
+            <p>${ albumChoices[currentAlbum][i].duration}</p>
         </div>
     
     </div>`
@@ -210,7 +210,7 @@ for (let i = 0; i < currentAlbum.length; i++) {
 
 const carRightButton = document.querySelector('.carousel-control-next')
 carRightButton.addEventListener("click", function(){
-   songRow.appendChild(currentAlbum[1])
+  currentAlbum++
 
 
 
