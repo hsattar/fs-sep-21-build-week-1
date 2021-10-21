@@ -1,5 +1,5 @@
 /* ----------------------------------------------- GENERAL STYLING ----------------------------------------------- */
-html{
+html {
   scroll-behavior: smooth;
 }
 :root {
@@ -270,10 +270,9 @@ button.btn.bg-black {
 .hp-subhero-card {
   background-color: var(--dark-black);
   position: relative;
-  margin:  2px;
+  margin: 2px;
   padding-left: 10px;
   padding-right: 10px;
-  
 }
 
 .hp-subhero-title {
@@ -388,7 +387,7 @@ button.btn.bg-black {
 .buttoncard {
   height: 30px;
   width: 30px;
-  background-color:#6CC04A;
+  background-color: #6cc04a;
   border-radius: 50%;
   position: absolute;
   opacity: 0;
@@ -418,44 +417,43 @@ button.btn.bg-black {
   transform: scale(1.1);
 }
 
-#recentlyplayed .row{
+#recentlyplayed .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
 
-#showstotry .row{
+#showstotry .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
 
-#moreofyoulike .row{
+#moreofyoulike .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
 
-#hits .row{
+#hits .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
 
-#bestof .row{
+#bestof .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
 
-#jumpback .row{
+#jumpback .row {
   flex-wrap: nowrap;
   margin-right: 25px;
 }
-#fans .row{
+#fans .row {
   flex-wrap: nowrap;
   margin-right: 25px;
-
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-h3{
+h3 {
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
   background-size: cover;
   color: transparent;

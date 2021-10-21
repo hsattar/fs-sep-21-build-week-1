@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-.artist-queen{
+.artist-queen {
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
   background-size: cover;
   color: transparent;
@@ -9,7 +9,6 @@
   text-transform: uppercase;
   font-size: 50px;
 }
-
 
 .album-img-container .col-12 {
   padding: 0;
@@ -72,15 +71,12 @@
   bottom: 0;
   left: 0;
   /* background: rgb(42, 42, 42);
-  background: rgb(42, 42, 42);
   background: linear-gradient(
     180deg,
     rgba(42, 42, 42, 0) 0%,
     rgba(42, 42, 42, 0) 48%,
-    rgba(42, 42, 42, 0) 84%,
-    #706f708e 90%,
-    #706f70c3 99%,
-    #706f70 100%
+    rgba(42, 42, 42, 0) 95%,
+    #706f70f3 100%
   ); */
 }
 
@@ -118,7 +114,7 @@ background: linear-gradient(0deg, rgba(31,31,31,1) 0%, rgba(12, 11, 11, 0.609) 7
   overflow-y: scroll;
 }
 
-.verified-artist-badge{
+.verified-artist-badge {
   display: flex;
   align-items: center;
 }
