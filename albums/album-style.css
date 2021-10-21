@@ -93,3 +93,16 @@
   height: 200px;
   box-shadow: 0px 4px 19px -1px #252525;
 }
+.carasoul-btn1{
+  margin-top: 3px;
+  height: 45px;
+  width: 130px;
+}
+.btn-saved{
+  width: 150px;
+  border-color: white;
+}
+.dot-icon{
+  margin-left: 10px;
+  font-size: 35px;
+}
