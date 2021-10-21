@@ -73,13 +73,40 @@ btnModern.addEventListener("click", function() {
 
 // == select song as favourite
 let heartIcons = document.querySelectorAll("i")
+let classActive = heartIcons[].classList.contains("bi-heart")
 
-function iteration() {
-    for (let i = 0; i < heartIcons.length; i++) {
-        heartIcons[i].addEventListener("click", alert("It work"))
+let addFavouritTotheList = function(element) {
+    if (classActive) { //if the preferred heart is false
+        element.classList.remove("bi-heart"); //  we change class of heart
+        element.classList.add("bi-heart-fill") // ==========================
+        let favSong = this.previousElementSibling; // here we select the favourite song and his content
+        let selectedElement = favSong.innerHTML; //==============================================
+        element.push(selectedElement) // here we add the son at the array of favourite song reay to be show
+        console.log(arrFavSong) // ===========================================
+    } else if (!classActive) {
+        element.classList.remove("bi-heart-fill"); //if the preferred heart is true
+        element.classList.add("bi-heart") //  we change class of heart
+        let favSong = this.previousElementSibling; // here we select the favourite song and his content
+        let selectedElement = favSong.innerHTML; //==============================================
+        let index = arrFavSong.indexOf(selectedElement) // here we check if the song is into the array
+        if (index >= 0) { // if it's true
+            arrFavSong.splice(index) // we delete the song
+        }
 
     }
 }
+
+for (let i = 0; i < heartIcons.length; i++) {
+    heartIcons[i].addEventListener("click", addFavouritTotheList(heartIcons))
+}
+
+
+
+/* for (const element of heartIcons) {
+    let classActive = heartIcons.classList.contains("bi-heart")
+
+
+} */
 
 
 /* let addFavouritTotheList = function() {
@@ -103,14 +130,4 @@ function iteration() {
         }
         console.log(arrFavSong)
     }
-
-
-
-
-}
-
-heartIcons.forEach(element => {
-
-    element.addEventListener("click", addFavouritTotheList())
-
-}); */
+} */
