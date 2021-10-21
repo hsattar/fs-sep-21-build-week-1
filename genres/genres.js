@@ -11,6 +11,7 @@ let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
 let icondpurpletHeart = document.getElementsByClassName("dpurpletHeart").classList.contains("bi-heart")
+
 let icondoorstHeart = document.getElementsByClassName("doorstHeart").classList.contains("bi-heart")
 let iconledZep = document.getElementsByClassName("ledZep").classList.contains("bi-heart")
 let iconwho = document.getElementsByClassName("who").classList.contains("bi-heart")
