@@ -380,15 +380,15 @@ button.btn.bg-black {
 }
 
 .buttoncard {
-  height: 40px;
-  width: 40px;
-  background-color: #6cc04a;
+  height: 30px;
+  width: 30px;
+  background-color:#6CC04A;
   border-radius: 50%;
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease;
   right: 25px;
-  bottom: 110px;
+  bottom: 125px;
 }
 .buttoncard::before {
   content: "";
