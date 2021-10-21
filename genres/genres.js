@@ -30,3 +30,22 @@ btnModern.addEventListener("click", function() {
     modernSection.classList.toggle("displaynone")
 
 })
+
+// == select song as favourite
+
+let heartIcons = document.getElementById("firstHeart")
+
+heartIcons.addEventListener("click", function(e) {
+    let classActive = heartIcons.classList.contains("bi-heart")
+    if (classActive) {
+        heartIcons.classList.remove("bi-heart");
+        heartIcons.classList.add("bi-heart-fill")
+
+    } else if (!classActive) {
+        heartIcons.classList.remove("bi-heart-fill");
+        heartIcons.classList.add("bi-heart")
+    }
+
+
+
+})
