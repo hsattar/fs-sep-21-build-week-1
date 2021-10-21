@@ -51,13 +51,17 @@ const favouriteSongsContainer = document.querySelector('#favourite-songs-contain
 for (let i = 0; i < albumSongs.length; i++) {
     const songRow = document.createElement('div')
     songRow.innerHTML = `
-    <div class="row song-info">
+    <div class="row song-info mb-3">
                     
-        <div class="col-1 light-gray-text">
+        <div class="col-1 num-order light-gray-text">
             <p>${i + 1}</p>
         </div>
 
-        <div class="col-10">
+        <div class="col-1 list-song-img">
+        <img src="../assets/cards/${i+1}.jpg" class="img-fluid rounded">
+        </div>
+
+        <div class="col-9 ">
             <p class="my-0 font-weight-bold">${albumSongs[i].title}</p>
             <p class="mt-0 mb-2 smaller-text light-gray-text">${albumSongs[i].artist}</p>
         </div>
