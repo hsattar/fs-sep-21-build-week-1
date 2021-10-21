@@ -95,3 +95,100 @@ songInfo.forEach(song => {
         console.log(songTitle)
     })
 })
+
+
+const album2 = [
+    {
+        title: 'Chicago free style',
+        artist: 'Drake',
+        duration: '3:25'
+    },
+    {
+        title: 'Iam my feelings',
+        artist: 'Drake',
+        duration: '4:00'
+    },
+    {
+        title: 'Life is good',
+        artist: 'Drake',
+        duration: '3:30'
+    },
+    {
+        title: 'God\'s Plan',
+        artist: 'Drake',
+        duration: '4:20'
+    },
+    {
+        title: 'Money in the Grave',
+        artist: 'Drake',
+        duration: '3:40'
+    },
+    {
+        title: 'Too much',
+        artist: 'Queen',
+        duration: '4:37'
+    },
+    {
+        title: 'Doing it wrong',
+        artist: 'Drake',
+        duration: '4:54'
+    },
+    {
+        title: 'Now I\'m here - Live At The Hammersmith Odeon',
+        artist: 'Drake',
+        duration: '4:40'
+    },
+    {
+        title: 'Fake Love',
+        artist: 'Drake',
+        duration: '2:43'
+    }    
+]
+
+const album3 = [
+    {
+        title: 'Love Yourself',
+        artist: 'Justin Bieber',
+        duration: '3:25'
+    },
+    {
+        title: 'Yummy',
+        artist: 'Justin Bieber',
+        duration: '4:00'
+    },
+    {
+        title: 'One Time',
+        artist: 'Justin Bieber',
+        duration: '3:30'
+    },
+    {
+        title: 'Boyfriend',
+        artist: 'Justin Bieber',
+        duration: '4:20'
+    },
+    {
+        title: 'Sorry',
+        artist: 'Justin Bieber',
+        duration: '3:40'
+    },
+    {
+        title: 'Somebody to love',
+        artist: 'Justin Bieber',
+        duration: '4:37'
+    },
+    {
+        title: 'Nothing like us',
+        artist: 'Justin Bieber',
+        duration: '4:54'
+    },
+    {
+        title: 'Forever',
+        artist: 'Justin Bieber',
+        duration: '4:40'
+    },
+    {
+        title: 'Fake Love',
+        artist: 'Justin Bieber',
+        duration: '2:43'
+    }    
+]

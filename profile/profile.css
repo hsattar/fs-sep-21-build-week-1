@@ -1,6 +1,6 @@
 .profile-picture{
     /* width: 200px; */
-    margin-top: 50px;
+    margin-top: 10px;
     /* margin-left: 25px; */
   }
   .label-name{
@@ -13,7 +13,11 @@
     outline: none;
   }
   .edit-info{
-
     margin-left: 10px;
   }
- 
+  body{
+    background-color: #000000;
+  }
+  h1{
+    margin-left: 50px;;
+  }
