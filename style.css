@@ -411,3 +411,38 @@ button.btn.bg-black {
 .buttoncard:hover {
   transform: scale(1.1);
 }
+
+#recentlyplayed .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#showstotry .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#moreofyoulike .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#hits .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#bestof .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+
+#jumpback .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+}
+#fans .row{
+  flex-wrap: nowrap;
+  margin-right: 25px;
+
+}
