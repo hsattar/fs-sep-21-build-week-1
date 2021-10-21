@@ -72,10 +72,18 @@ btnModern.addEventListener("click", function() {
 })
 
 // == select song as favourite
+let heartIcons = document.querySelectorAll("i")
 
-let heartIcons = document.getElementById("firstHeart")
+function iteration() {
+    for (let i = 0; i < heartIcons.length; i++) {
+        heartIcons[i].addEventListener("click", alert("It work"))
 
-heartIcons.addEventListener("click", function(e) {
+    }
+}
+
+
+/* let addFavouritTotheList = function() {
+
     let classActive = heartIcons.classList.contains("bi-heart")
     if (classActive) { //if the preferred heart is false
         heartIcons.classList.remove("bi-heart"); //  we change class of heart
@@ -96,4 +104,13 @@ heartIcons.addEventListener("click", function(e) {
         console.log(arrFavSong)
     }
 
-})
+
+
+
+}
+
+heartIcons.forEach(element => {
+
+    element.addEventListener("click", addFavouritTotheList())
+
+}); */
