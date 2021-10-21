@@ -10,21 +10,11 @@ let rebSection = document.getElementById("rebStyle")
 let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
-let icondpurpletHeart = document.getElementsByClassName("dpurpletHeart")
-console.log(icondpurpletHeart)
 
-.classList.contains("bi-heart")
-let icondoorstHeart = document.getElementsByClassName("doorstHeart").classList.contains("bi-heart")
-let iconledZep = document.getElementsByClassName("ledZep").classList.contains("bi-heart")
-let iconwho = document.getElementsByClassName("who").classList.contains("bi-heart")
-let iconroll = document.getElementsByClassName("roll").classList.contains("bi-heart")
-let iconpfloyd = document.getElementsByClassName("pfloyd").classList.contains("bi-heart")
-let iconclash = document.getElementsByClassName("clash").classList.contains("bi-heart")
-let iconpolice = document.getElementsByClassName("police").classList.contains("bi-heart")
-let iconbowie = document.getElementsByClassName("bowie").classList.contains("bi-heart")
-let iconjoplin = document.getElementsByClassName("joplin").classList.contains("bi-heart")
-let iconmfsb = document.getElementsByClassName("mfsb").classList.contains("bi-heart")
-let iconhendrix = document.getElementsByClassName("hendrix").classList.contains("bi-heart")
+
+
+
+
 
 
 const songs = [{
@@ -93,40 +83,35 @@ btnModern.addEventListener("click", function() {
 //let classActive = icondoorstHeart.classList.contains("bi-heart")
 
 
+let heartIcons = document.querySelectorAll("i")
+let classActive = heartIcons[0].classList.contains("bi-heart")
+
+//.classList.contains("bi-heart")
 
 let addFavouritTotheList = function() {
 
     if (classActive) { //if the preferred heart is false
         heartIcons.classList.remove("bi-heart"); //  we change class of heart
         heartIcons.classList.add("bi-heart-fill") // ==========================
-        let favSong = this.previousElementSibling; // here we select the favourite song and his content
-        let selectedElement = favSong.innerHTML; //==============================================
-        heartIcons.push(selectedElement) // here we add the son at the array of favourite song reay to be show
+            //let favSong = this.previousElementSibling; // here we select the favourite song and his content
+            //let selectedElement = favSong.innerHTML; //==============================================
+            //heartIcons.push(selectedElement) // here we add the son at the array of favourite song reay to be show
         console.log(arrFavSong) // ===========================================
     } else if (!classActive) {
         heartIcons.classList.remove("bi-heart-fill"); //if the preferred heart is true
         heartIcons.classList.add("bi-heart") //  we change class of heart
-        let favSong = this.previousElementSibling; // here we select the favourite song and his content
-        let selectedElement = favSong.innerHTML; //==============================================
-        let index = arrFavSong.indexOf(selectedElement) // here we check if the song is into the array
-        if (index >= 0) { // if it's true
-            arrFavSong.splice(index) // we delete the song
-        }
+            //let favSong = this.previousElementSibling; // here we select the favourite song and his content
+            //let selectedElement = favSong.innerHTML; //==============================================
+            //let index = arrFavSong.indexOf(selectedElement) // here we check if the song is into the array
+            // if (index >= 0) { // if it's true
+            //   arrFavSong.splice(index) // we delete the song
     }
 }
 
-icondpurpletHeart.addEventListener("click", addFavouritTotheList)
-icondoorstHeart.addEventListener("click", addFavouritTotheList)
-iconledZep.addEventListener("click", addFavouritTotheList)
-iconwho.addEventListener("click", addFavouritTotheList)
-iconroll.addEventListener("click", addFavouritTotheList)
-iconpfloyd.addEventListener("click", addFavouritTotheList)
-iconclash.addEventListener("click", addFavouritTotheList)
-iconpolice.addEventListener("click", addFavouritTotheList)
-iconbowie.addEventListener("click", addFavouritTotheList)
-iconjoplin.addEventListener("click", addFavouritTotheList)
-iconmfsb.addEventListener("click", addFavouritTotheList)
-iconhendrix.addEventListener("click", addFavouritTotheList)
+
+
+heartIcons.addEventListener("click", addFavouritTotheList)
+
 
 
 
@@ -156,3 +141,38 @@ iconhendrix.addEventListener("click", addFavouritTotheList)
         console.log(arrFavSong)
     }
 } */
+
+
+
+
+
+
+
+
+
+
+
+// icondpurpletHeart.addEventListener("click", addFavouritTotheList)
+// icondoorstHeart.addEventListener("click", addFavouritTotheList)
+// iconledZep.addEventListener("click", addFavouritTotheList)
+// iconwho.addEventListener("click", addFavouritTotheList)
+// iconroll.addEventListener("click", addFavouritTotheList)
+// iconpfloyd.addEventListener("click", addFavouritTotheList)
+// iconclash.addEventListener("click", addFavouritTotheList)
+// iconpolice.addEventListener("click", addFavouritTotheList)
+// iconbowie.addEventListener("click", addFavouritTotheList)
+// iconjoplin.addEventListener("click", addFavouritTotheList)
+// iconmfsb.addEventListener("click", addFavouritTotheList)
+// iconhendrix.addEventListener("click", addFavouritTotheList)
+
+
+/* let iconledZep = document.getElementsByClassName("ledZep").classList.contains("bi-heart")
+let iconwho = document.getElementsByClassName("who").classList.contains("bi-heart")
+let iconroll = document.getElementsByClassName("roll").classList.contains("bi-heart")
+let iconpfloyd = document.getElementsByClassName("pfloyd").classList.contains("bi-heart")
+let iconclash = document.getElementsByClassName("clash").classList.contains("bi-heart")
+let iconpolice = document.getElementsByClassName("police").classList.contains("bi-heart")
+let iconbowie = document.getElementsByClassName("bowie").classList.contains("bi-heart")
+let iconjoplin = document.getElementsByClassName("joplin").classList.contains("bi-heart")
+let iconmfsb = document.getElementsByClassName("mfsb").classList.contains("bi-heart")
+let iconhendrix = document.getElementsByClassName("hendrix").classList.contains("bi-heart") */
