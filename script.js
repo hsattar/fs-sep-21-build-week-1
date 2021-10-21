@@ -281,13 +281,10 @@ const setTimeForGoodMorning = function(){
     let myDate = new Date();   /* hour is before noon */ 
         if (myDate.getHours() < 12 )  { 
         document.getElementById('good-morning-h3').innerHTML ="Good Morning!";
-        document.getElementById('good-morning-h3').innerHTML ="white";
         }else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) {     /* hour is after noon */ 
           document.getElementById('good-morning-h3').innerHTML ="Good Afternoon!";
-          document.getElementById('good-morning-h3').style.color ="orange";
         }else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ){     
           document.getElementById('good-morning-h3').innerHTML= "Good Evening!"; /* hour is in the evening */ 
-          document.getElementById('good-morning-h3').style.color= "green"; 
         } else{     
           document.getElementById('good-morning-h3').innerHTML="I am so DUMB to calculate the current time!"; 
         }
