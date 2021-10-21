@@ -179,40 +179,209 @@ const album3 = [
 
 const albumSongsContainer = document.querySelector('#album-songs-container')
 let albumChoices = [
-    'albumSongs',
-     'album2',
-     'album3'
-] 
+    [
+        {
+            title: '20th Century Fox Fanfare',
+            artist: 'Queen',
+            duration: '0:25'
+        },
+        {
+            title: 'Somebody To Love',
+            artist: 'Queen',
+            duration: '4:55'
+        },
+        {
+            title: 'Doing All Right - ...Revisited',
+            artist: 'Queen',
+            duration: '3:16'
+        },
+        {
+            title: 'Keep Yourself Alive - Live At The Rainbow',
+            artist: 'Queen',
+            duration: '3:56'
+        },
+        {
+            title: 'Killer Queen',
+            artist: 'Queen',
+            duration: '2:59'
+        },
+        {
+            title: 'Fat Bottomed Girls - Live In Paris',
+            artist: 'Queen',
+            duration: '4:37'
+        },
+        {
+            title: 'Bohemian Rhapsody',
+            artist: 'Queen',
+            duration: '5:54'
+        },
+        {
+            title: 'Now I\'m here - Live At The Hammersmith Odeon',
+            artist: 'Queen',
+            duration: '4:25'
+        },
+        {
+            title: 'Crazy Little Thing Called Love',
+            artist: 'Queen',
+            duration: '2:43'
+        }    
+    ],
+    [
+        {
+            title: 'Chicago free style',
+            artist: 'Drake',
+            duration: '3:25'
+        },
+        {
+            title: 'Iam my feelings',
+            artist: 'Drake',
+            duration: '4:00'
+        },
+        {
+            title: 'Life is good',
+            artist: 'Drake',
+            duration: '3:30'
+        },
+        {
+            title: 'God\'s Plan',
+            artist: 'Drake',
+            duration: '4:20'
+        },
+        {
+            title: 'Money in the Grave',
+            artist: 'Drake',
+            duration: '3:40'
+        },
+        {
+            title: 'Too much',
+            artist: 'Queen',
+            duration: '4:37'
+        },
+        {
+            title: 'Doing it wrong',
+            artist: 'Drake',
+            duration: '4:54'
+        },
+        {
+            title: 'Now I\'m here - Live At The Hammersmith Odeon',
+            artist: 'Drake',
+            duration: '4:40'
+        },
+        {
+            title: 'Fake Love',
+            artist: 'Drake',
+            duration: '2:43'
+        }    
+    ],
+    [
+        {
+            title: 'Love Yourself',
+            artist: 'Justin Bieber',
+            duration: '3:25'
+        },
+        {
+            title: 'Yummy',
+            artist: 'Justin Bieber',
+            duration: '4:00'
+        },
+        {
+            title: 'One Time',
+            artist: 'Justin Bieber',
+            duration: '3:30'
+        },
+        {
+            title: 'Boyfriend',
+            artist: 'Justin Bieber',
+            duration: '4:20'
+        },
+        {
+            title: 'Sorry',
+            artist: 'Justin Bieber',
+            duration: '3:40'
+        },
+        {
+            title: 'Somebody to love',
+            artist: 'Justin Bieber',
+            duration: '4:37'
+        },
+        {
+            title: 'Nothing like us',
+            artist: 'Justin Bieber',
+            duration: '4:54'
+        },
+        {
+            title: 'Forever',
+            artist: 'Justin Bieber',
+            duration: '4:40'
+        },
+        {
+            title: 'Fake Love',
+            artist: 'Justin Bieber',
+            duration: '2:43'
+        }    
+    ]    
+]
+
+
 let currentAlbum = 0
-
-for (let i = 0; i < albumChoices[currentAlbum].length; i++) {
-    const songRow = document.createElement('div')
-    songRow.innerHTML = `
-    <div class="row song-info">
-                    
-        <div class="col-1 light-gray-text">
-            <p>${i + 1}</p>
-        </div>
-
-        <div class="col-10">
-            <p class="my-0 font-weight-bold">${ albumChoices[currentAlbum][i].title}</p>
-            <p class="mt-0 mb-2 smaller-text light-gray-text">${ albumChoices[currentAlbum][i].artist}</p>
-        </div>
-
-        <div class="col-1 light-gray-text">
-            <p>${ albumChoices[currentAlbum][i].duration}</p>
-        </div>
+const loadSongs = function() {
+    let currentArray = albumChoices[currentAlbum]
+    albumSongsContainer.innerHTML = ''
+    for (let i = 0; i < currentArray.length; i++) {
+        const songRow = document.createElement('div')
+        songRow.innerHTML = `
+        <div class="row song-info">
+                        
+            <div class="col-1 light-gray-text">
+                <p>${i + 1}</p>
+            </div>
     
-    </div>`
-    albumSongsContainer.appendChild(songRow)
+            <div class="col-10">
+                <p class="my-0 font-weight-bold">${currentArray[i].title}</p>
+                <p class="mt-0 mb-2 smaller-text light-gray-text">${currentArray[i].artist}</p>
+            </div>
+    
+            <div class="col-1 light-gray-text">
+                <p>${currentArray[i].duration}</p>
+            </div>
+        
+        </div>`
+        albumSongsContainer.appendChild(songRow)
+    }
 }
 
 
-const carRightButton = document.querySelector('.carousel-control-next')
-carRightButton.addEventListener("click", function(){
-  currentAlbum++
-
-
-
-
+const nextAlbum = document.querySelector('.carousel-control-next')
+nextAlbum.addEventListener("click", function(){
+    currentAlbum++
+    if (currentAlbum === 3) {
+        currentAlbum = 0
+    }
+    loadSongs()
+    changeBackground() 
 })
+
+const previousAlbum = document.querySelector('.carousel-control-prev')
+previousAlbum.addEventListener("click", function(){
+    if (currentAlbum === 0) {
+        currentAlbum = 3
+    }
+    currentAlbum--
+    loadSongs() 
+    changeBackground() 
+})
+
+loadSongs()
+
+const changeBackground = () => {
+    const albumHeader = document.querySelector('#album-header-container')
+    const bgWrapper = document.querySelector('.bg-wrapper')
+    if (currentAlbum === 1) {
+        albumHeader.style.background = `linear-gradient(
+            180deg,
+            #ff6100 0%,
+            #ff6100 55%,
+            #ff6100 88%
+          );`
+    }
+}
