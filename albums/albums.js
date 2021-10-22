@@ -378,12 +378,7 @@ const changeBackground = () => {
     const bgWrapper = document.querySelector('.bg-wrapper')
     if (currentAlbum === 0) {
         console.log(currentAlbum)
-        albumHeader.style.background = `linear-gradient(
-            180deg,
-            #dd9d93 0%,
-            #dd9d93 55%,
-            #dd9d93 88%
-        )`
+        albumHeader.style.background = `#dd9d93`
         bgWrapper.style.background = `linear-gradient(
             180deg,
             #dd9d93 0%,
@@ -393,12 +388,7 @@ const changeBackground = () => {
     }
     if (currentAlbum === 1) {
         console.log(currentAlbum)
-        albumHeader.style.background = `linear-gradient(
-            180deg,
-            #ff6100 0%,
-            #ff6100 55%,
-            #ff6100 88%
-        )`
+        albumHeader.style.background = `#ff6100`
         bgWrapper.style.background = `linear-gradient(
             180deg,
             #ff6100 0%,
@@ -408,12 +398,7 @@ const changeBackground = () => {
     }
     if (currentAlbum === 2) {
         console.log(currentAlbum)
-        albumHeader.style.background = `linear-gradient(
-            180deg,
-            #474747 0%,
-            #474747 55%,
-            #474747 88%
-        )`
+        albumHeader.style.background = `#474747`
         bgWrapper.style.background = `linear-gradient(
             180deg,
             #474747 0%,
