@@ -11,22 +11,17 @@ let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
 
-
 btnRock.addEventListener("click", function() {
     rockSection.classList.toggle("displaynone")
 })
-
 btnREB.addEventListener("click", function() {
     rebSection.classList.toggle("displaynone")
-
 })
 btnUnderground.addEventListener("click", function() {
     underSection.classList.toggle("displaynone")
-
 })
 btnJazz.addEventListener("click", function() {
     jazzSection.classList.toggle("displaynone")
-
 })
 btnModern.addEventListener("click", function() {
     modernSection.classList.toggle("displaynone")
@@ -57,6 +52,8 @@ heartIcons.forEach(element => {
                 arrFavSong.splice(index) // we delete the song
             }
         }
-
     })
 }); // end function add event listener
+
+
+let favSongListShow = document.getElementById("favouriteSong")
