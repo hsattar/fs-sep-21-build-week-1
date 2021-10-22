@@ -46,43 +46,33 @@ const favSongs = [
     }    
 ]
 
-if (window.location.href === 'http://127.0.0.1:5500/favourites/favourites.html') {
-    const favouriteSongsContainer = document.querySelector('#favourite-songs-container')
+const favouriteSongsContainer = document.querySelector('#favourite-songs-container')
+
+for (let i = 0; i < favSongs.length; i++) {
+    const songRow = document.createElement('div')
+    songRow.innerHTML = `
+    <div class="row song-info mb-3">
+                    
+        <div class="col-1 num-order light-gray-text">
+            <p>${i + 1}</p>
+        </div>
+
+        <div class="col-1 list-song-img">
+        <img src="../assets/cards/${i+1}.jpg" class="img-fluid rounded">
+        </div>
+
+        <div class="col-9 ">
+            <p class="my-0 font-weight-bold">${favSongs[i].title}</p>
+            <p class="mt-0 mb-2 smaller-text light-gray-text">${favSongs[i].artist}</p>
+        </div>
+
+        <div class="col-1 light-gray-text">
+            <p>${favSongs[i].duration}</p>
+        </div>
     
-    for (let i = 0; i < favSongs.length; i++) {
-        const songRow = document.createElement('div')
-        songRow.innerHTML = `
-        <div class="row song-info mb-3">
-                        
-            <div class="col-1 num-order light-gray-text">
-                <p>${i + 1}</p>
-            </div>
-    
-            <div class="col-1 list-song-img">
-            <img src="../assets/cards/${i+1}.jpg" class="img-fluid rounded">
-            </div>
-    
-            <div class="col-9 ">
-                <p class="my-0 font-weight-bold">${favSongs[i].title}</p>
-                <p class="mt-0 mb-2 smaller-text light-gray-text">${favSongs[i].artist}</p>
-            </div>
-    
-            <div class="col-1 light-gray-text">
-                <p>${favSongs[i].duration}</p>
-            </div>
-        
-        </div>`
-        favouriteSongsContainer.appendChild(songRow)
-    }
-
-
-
-
-} else {
-
-
-
-    
+    </div>`
+    favouriteSongsContainer.appendChild(songRow)
+}
 
 let btnRock = document.getElementById("rock")
 let btnUnderground = document.getElementById("underground")
@@ -97,7 +87,6 @@ let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
 
-console.log(btnRock)
 
 btnRock.addEventListener("click", function() {
     rockSection.classList.toggle("displaynone")
@@ -144,5 +133,3 @@ heartIcons.forEach(element => {
 
     })
 }); // end function add event listener
-
-}
