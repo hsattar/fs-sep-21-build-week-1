@@ -1,4 +1,4 @@
-let btnRock = document.getElementById("rock")
+let btnRock1 = document.getElementById("rock")
 let btnUnderground = document.getElementById("underground")
 let btnREB = document.getElementById("r&b")
 let btnJazz = document.getElementById("jazz")
@@ -11,7 +11,7 @@ let jazzSection = document.getElementById("jazzStyle")
 let modernSection = document.getElementById("modernStyle")
 
 
-btnRock.addEventListener("click", function() {
+btnRock1.addEventListener("click", function() {
     rockSection.classList.toggle("displaynone")
 })
 btnREB.addEventListener("click", function() {
@@ -52,8 +52,24 @@ heartIcons.forEach(element => {
                 arrFavSong.splice(index) // we delete the song
             }
         }
+        console.log(arrFavSong)
     })
 }); // end function add event listener
 
 
 let favSongListShow = document.getElementById("favouriteSong")
+let showListBtn = document.getElementById("showListBtn")
+let listFavouredSong = document.createElement("div")
+
+showListBtn.onclick = () => {
+    arrFavSong.forEach(element => {
+        listFavouredSong.innerHTML += `<p>
+     ${element}</p>`
+        favSongListShow.appendChild(listFavouredSong)
+
+
+    });
+
+}
+
+favSongListShow.style.backgroundColor("red")
