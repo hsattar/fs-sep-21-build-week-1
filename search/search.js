@@ -2,10 +2,18 @@ const searchInput = document.querySelector('#song-search')
 // const searchQuery = searchInput.value
 const searchBtn = document.querySelector('#search-btn')
 
-searchBtn.addEventListener('click', () => {
-    callApi()
+searchInput.addEventListener('keyup', e => {
+    if (e.keyCode === 13) {
+        e.preventDefault()
+        searchBtn.click()
+    }
 })
 
+searchBtn.addEventListener('click', () => {
+    callApi()
+    searchResults()
+    searchInput.value = ''
+})
 
 const callApi = () => {
     fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${searchInput.value}`)
@@ -17,7 +25,8 @@ const callApi = () => {
                 }
     
                 response.json().then(function(data) {
-                    console.log(data)
+                    searchResults(data)
+                    displayResults(data)
                 })
             }
         )
@@ -27,5 +36,20 @@ const callApi = () => {
         })
 }
 
+const searchResults = (data) => {
+    const searchResultsText = document.getElementById('search-results')
+    let results = data.data
+    searchResultsText.innerHTML = `Showing <b>${results.length}</b> Results For <b>${searchInput.value}</b>`
+}
 
+const displayResults = (data) => {
+    const resultsContainer = document.getElementById('show-results-container')
+    resultsContainer.innerHTML = ''
+    let results = data.data
+    results.forEach(result => {
+        const newSong = document.createElement('div')
+        newSong.innerHTML = `<p>${result.title}</p>`
+        resultsContainer.appendChild(newSong)
+    })
+}
 
