@@ -28,7 +28,7 @@
                         <div class="row">
                             <div class="side-bar col-12 px-0">
                                 <a href="../index.html"><img class="spotify-logo" src="../assets/spotify-logo.png" alt="sidebar-logo"></a>
-                                
+
                                 <a href="../index.html" class="d-flex py-2">
                                     <i class="bi bi-house-door mx-3"></i>
                                     <p>Home</p>
@@ -62,7 +62,7 @@
                                 <a href="../profile/profile.html" class="d-flex py-2">
                                     <i class="bi bi-person-circle mx-3"></i>
                                     <p>Account</p>
-                                </a> 
+                                </a>
 
                                 <hr class="border-secondary">
                                 <div class="other-links">
@@ -124,7 +124,7 @@
                                 <a href="../profile/profile.html" class="d-flex flex-column py-2 align-items-center justify-content-center">
                                     <i class="bi bi-person-circle mx-3"></i>
                                     <p>Account</p>
-                                </a> 
+                                </a>
 
                             </div>
                         </div>
@@ -138,8 +138,11 @@
 
                         <div class="row ml-4 ">
                             <!-- FRANCESCO CODE GOES HERE -->
-                            <div class="col-12 mt-5 border-bottom border-secondary">
+                            <div class="d-flex justify-content-between col-12 my-md-3 my-lg-5 border-bottom border-secondary">
                                 <h3>Genres page</h3>
+                                <button type="button" id="showListBtn" class="btn-secondary btn-sm btn-dark btn-hover rounded-pill" data-target="#showListBtn">
+  Show List
+</button>
                             </div>
                             <div class="col-12 text-center showList bg-songLibrary">
                                 <button type="button" id="rock" class="btn btn-secondary btn-sm btn-dark btn-hover col-12 col-sm-6 col-md-4 col-lg-2 my-1 my-sm-1 my-lg-2 mx-2 ">Rock</button>
@@ -163,7 +166,7 @@
 
 
                             <div class="styleSection displaynone" id="rockStyle">
-                                <h3 class="styleTitle">ROCK</h3>
+                                <h4 class="styleTitle">ROCK</h4>
 
 
                                 <div class="d-flex col-12 py-3 ">
@@ -319,7 +322,7 @@
                             </div>
                             <!-- END ROCK SECTION -->
                             <div class="styleSection displaynone" id="undergroundStyle">
-                                <h3 class="styleTitle">UNDERGROUND</h3>
+                                <h4 class="styleTitle">UNDERGROUND</h4>
                                 <div class="d-flex col-12 py-3 ">
 
                                     <div class="d-flex flex-wrap mt-5">
@@ -449,7 +452,7 @@
                             <!-- END UNDERGROUND SECTION -->
                             <div class="styleSection displaynone" id="rebStyle">
                                 <div class="d-flex col-12 py-3">
-                                    <h3 class="styleTitle">R&B</h3>
+                                    <h4 class="styleTitle">R&B</h4>
                                     <div class="d-flex flex-wrap mt-5">
                                         <div class="hp-card my-3 col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="d-flex">
@@ -577,7 +580,7 @@
                             <!-- END R&B SECTION -->
                             <div class="styleSection displaynone" id="jazzStyle">
 
-                                <h3 class="styleTitle">JAZZ</h3>
+                                <h4 class="styleTitle">JAZZ</h4>
                                 <div class="d-flex col-12 py-3">
 
                                     <div class="d-flex flex-wrap mt-5 ">
@@ -712,7 +715,7 @@
                             </div>
                             <!-- END JAZZ SECTION -->
                             <div class="styleSection displaynone" id="modernStyle">
-                                <h3 class="styleTitle">MODERN ROCK</h3>
+                                <h4 class="styleTitle">MODERN ROCK</h4>
                                 <div class="d-flex col-12 py-3">
                                     <div class="d-flex flex-wrap mt-5 ">
                                         <div class="hp-card my-3 col-12 col-sm-6 col-md-4 col-lg-3">
@@ -852,7 +855,12 @@
         </div>
     </div>
 
+    <div class="container">
+        <div id="favouriteSong" style="text-align: end;">
 
+        </div>
+
+    </div>
 
 
 
