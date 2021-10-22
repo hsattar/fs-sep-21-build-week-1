@@ -326,7 +326,31 @@ let albumChoices = [
 let currentAlbum = 0
 const loadSongs = function() {
     let currentArray = albumChoices[currentAlbum]
-    albumSongsContainer.innerHTML = ''
+    albumSongsContainer.innerHTML = `
+    <div class="row my-3 album-controls">
+        <div class="col-12 album-action-icons d-flex align-items-center">
+            <i class="bi bi-play-circle-fill"><div class="white-bg"></div></i>
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-three-dots"></i>
+        </div>
+    </div>
+
+    <div class="row light-gray-text">
+    
+        <div class="col-1">
+            <p>#</p>
+        </div>
+
+        <div class="col-10">
+            <p>Title</p>
+        </div>
+
+        <div class="col-1">
+            <p><i class="bi bi-clock"></i></p>
+        </div>
+    
+    </div>
+    <div class="divider"></div>`
     for (let i = 0; i < currentArray.length; i++) {
         const songRow = document.createElement('div')
         songRow.innerHTML = `
@@ -358,7 +382,7 @@ nextAlbum.addEventListener("click", function(){
         currentAlbum = 0
     }
     loadSongs()
-    changeBackground() 
+    //changeBackground() 
 })
 
 const previousAlbum = document.querySelector('.carousel-control-prev')
@@ -368,76 +392,44 @@ previousAlbum.addEventListener("click", function(){
     }
     currentAlbum--
     loadSongs() 
-    changeBackground() 
+    //changeBackground() 
 })
 
 loadSongs()
 
-const changeBackground = () => {
-    const albumHeader = document.querySelector('#album-header-container')
-    const bgWrapper = document.querySelector('.bg-wrapper')
-    if (currentAlbum === 0) {
-        console.log(currentAlbum)
-        albumHeader.style.background = `#dd9d93`
-        bgWrapper.style.background = `linear-gradient(
-            180deg,
-            #dd9d93 0%,
-            #dd9d93 5%,
-            #2a2a2a 20%
-          )`
-    }
-    if (currentAlbum === 1) {
-        console.log(currentAlbum)
-        albumHeader.style.background = `#ff6100`
-        bgWrapper.style.background = `linear-gradient(
-            180deg,
-            #ff6100 0%,
-            #ff6100 5%,
-            #2a2a2a 20%
-          )`
-    }
-    if (currentAlbum === 2) {
-        console.log(currentAlbum)
-        albumHeader.style.background = `#474747`
-        bgWrapper.style.background = `linear-gradient(
-            180deg,
-            #474747 0%,
-            #474747 5%,
-            #2a2a2a 20%
-          )`
-    }
-}
-
-
-// Music API control section 
-
-let audioElement = document.querySelector('.audio-play')
-
-let playButton = document.querySelector('.music-play-btn');
-let pauseButton = document.querySelector('.music-pause-btn');
-
-playButton.addEventListener("click", handlePlayButton, false);
-pauseButton.addEventListener("click", handlePlayButton, false)
-pauseButton.style.display = "none";
-async function playAudio(){
-  try {
-    await audioElement.play();
-    // playButton.classList.remove("bi bi-play-circle-fill");
-  } catch(err) {
-    // playButton.classList.remove("bi bi-play-circle-fill");
-  }
-}
-
-function handlePlayButton() {
-  if (audioElement.paused) {
-    playAudio();
-    pauseButton.style.display = "block";  
-    playButton.style.display = "none"
-  } else {
-    audioElement.pause();
-    playButton.style.display = "block"
-    pauseButton.style.display = "none";  
-  }
-}
+// const changeBackground = () => {
+//     const albumHeader = document.querySelector('#album-header-container')
+//     const bgWrapper = document.querySelector('.bg-wrapper')
+//     if (currentAlbum === 0) {
+//         console.log(currentAlbum)
+//         albumHeader.style.background = `#dd9d93`
+//         bgWrapper.style.background = `linear-gradient(
+//             180deg,
+//             #dd9d93 0%,
+//             #dd9d93 5%,
+//             #2a2a2a 20%
+//           )`
+//     }
+//     if (currentAlbum === 1) {
+//         console.log(currentAlbum)
+//         albumHeader.style.background = `#ff6100`
+//         bgWrapper.style.background = `linear-gradient(
+//             180deg,
+//             #ff6100 0%,
+//             #ff6100 5%,
+//             #2a2a2a 20%
+//           )`
+//     }
+//     if (currentAlbum === 2) {
+//         console.log(currentAlbum)
+//         albumHeader.style.background = `#474747`
+//         bgWrapper.style.background = `linear-gradient(
+//             180deg,
+//             #474747 0%,
+//             #474747 5%,
+//             #2a2a2a 20%
+//           )`
+//     }
+// }
 
 
