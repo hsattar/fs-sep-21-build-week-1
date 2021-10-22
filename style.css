@@ -1,4 +1,15 @@
 /* ----------------------------------------------- GENERAL STYLING ----------------------------------------------- */
+@keyframes fade-out{
+  0%{
+    opacity: 1.0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity:0.0
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -208,14 +219,20 @@ div.triangle-top-l {
   color: var(--white);
 }
 
+.good-morning-container div{
+  overflow: hidden;
+}
 .good-morning-container .card-wrapper {
   background-color: var(--card-wrapper-bg);
   width: 100%;
+  transition: 0.3s ease-in-out;
 }
 
 .good-morning-container .card-wrapper:hover {
   border: 2px solid var(--light-green);
   cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
 }
 
 #toggle-theme {
@@ -273,6 +290,7 @@ button.btn.bg-black {
   margin: 2px;
   padding-left: 10px;
   padding-right: 10px;
+  transition: .4s ease-in-out;
 }
 
 .hp-subhero-title {
@@ -324,6 +342,7 @@ button.btn.bg-black {
   z-index: 3;
   background-color: var(--dark-gray);
   cursor: pointer;
+  transition: .4s ease-in-out;
 }
 
 #showstotry img {
@@ -367,6 +386,10 @@ button.btn.bg-black {
   border-radius: 300px;
 }
 
+.main-page-content{
+  animation: fade-out;
+  transition: opacity .3 ease-in-out;
+}
 .main-page-content,
 .side-bar {
   padding-bottom: 85px;
@@ -467,3 +490,5 @@ h3 {
   width: 60px;
   height: 48px;
 }
+
+
