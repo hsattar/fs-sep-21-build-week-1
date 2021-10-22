@@ -300,7 +300,6 @@ let pauseButton = document.querySelector('.music-pause-btn');
 
 playButton.addEventListener("click", handlePlayButton, false);
 pauseButton.addEventListener("click", handlePlayButton, false)
-// playAudio();
 pauseButton.style.display = "none";
 async function playAudio(){
   try {
