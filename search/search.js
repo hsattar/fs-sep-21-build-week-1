@@ -38,10 +38,14 @@ const callApi = () => {
 }
 
 const searchResults = (data) => {
+    let randomTime = Math.random()
     const searchResultsText = document.getElementById('search-results')
     let results = data.data
-    searchResultsText.innerHTML = `Showing <b>${results.length}</b> Results For <b>${searchInput.value}</b>`
+    searchResultsText.innerHTML = `Showing <b>${results.length}</b> results for <b>${searchInput.value}</b> in <b>${randomTime}</b> seconds</b>`
 }
+
+let playPauseBtnClicks = 0
+let currentSongTime = 0
 
 const displayResults = (data) => {
     const resultsContainer = document.getElementById('show-results-container')
@@ -50,34 +54,43 @@ const displayResults = (data) => {
     results.forEach(result => {
         const resultsCard = document.createElement('div')
         resultsCard.className = 'hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 m-0'
-        resultsCard.innerHTML = `
+        resultsCard.innerHTML = `   
         <img src="${result.album.cover_small}" class="card-img-top pt-2 img-fluid" alt="...">
         <div class="card-body">
-            <p class="hp-subhero-title">${result.title} - ${result.album.title}</p>
-            <p class="hp-subhero-subtitle">${result.artist.name}</p>
+            <div class="buttoncard"></div>
+            <p class="hp-subhero-title">Song - ${result.title}</p>
+            <p>Album - ${result.album.title}</p>
+            <p class="hp-subhero-subtitle mb-0">${result.artist.name}</p>
         </div>`
         resultsContainer.appendChild(resultsCard)
-        // playAudio(result)
         resultsCard.addEventListener('click', () => {
             const albumImg = document.getElementById('albumImg')
             const songTitle = document.getElementById('songTitle')
             const songArtist = document.getElementById('songArtist')
             const musicPlay = document.getElementById('musicPlay')
+            const playPauseBtn = document.getElementById('playPauseBtn')
+            const trackBar = document.querySelector('.track-bar').style
+            setInterval(() => {
+                currentSongTime += 10
+                trackBar.setProperty('--songTime', `${currentSongTime}px`)
+            }, 1000)
             albumImg.setAttribute('src', `${result.album.cover_small}`)
             songTitle.innerText = `${result.title}`
             songArtist.innerText = `${result.artist.name}`
             musicPlay.setAttribute('src', `${result.preview}`)
+            playPauseBtn.className = 'bi bi-pause-circle-fill mx-3'
+            playPauseBtn.addEventListener('click', () => {
+                playPauseBtnClicks++
+                if (playPauseBtnClicks % 2 === 0) {
+                    musicPlay.play()
+                    playPauseBtn.className = 'bi bi-pause-circle-fill mx-3'
+                } else {
+                    musicPlay.pause()
+                    playPauseBtn.className = 'bi bi-play-circle-fill mx-3'
+                }
+            })
         })
     })
 }
 
-// const playAudio = (result) => {
-//     const playBtn = document.querySelectorAll('.buttoncard')
-//     playBtn.forEach(btn => {
-//         btn.addEventListener('click', () => {
-//             const musicPlayer = document.querySelector('#music-player')
-//             musicPlayer.setAttribute('src', `${result.preview}`)
-//         })
-//     })
-// }
 

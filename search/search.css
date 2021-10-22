@@ -1,0 +1,20 @@
+:root {
+  --songTime: 0px;
+}
+
+#playPauseBtn {
+  cursor: pointer;
+}
+
+.music-controls {
+  z-index: 3;
+}
+
+.track-bar::before {
+  content: "";
+  background-color: var(--light-green);
+  position: absolute;
+  height: 3px;
+  width: var(--songTime);
+  border-radius: 500px;
+}
