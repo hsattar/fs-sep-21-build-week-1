@@ -208,6 +208,9 @@ div.triangle-top-l {
   color: var(--white);
 }
 
+.good-morning-container div{
+  overflow: hidden;
+}
 .good-morning-container .card-wrapper {
   background-color: var(--card-wrapper-bg);
   width: 100%;
