@@ -91,16 +91,20 @@
   height: 200px;
   box-shadow: 0px 4px 19px -1px #252525;
 }
-.carasoul-btn1{
+.carasoul-btn1 {
   margin-top: 3px;
   height: 45px;
   width: 130px;
 }
-.btn-saved{
+.btn-saved {
   width: 150px;
   border-color: white;
 }
-.dot-icon{
+.dot-icon {
   margin-left: 10px;
   font-size: 35px;
+}
+
+.album-controls {
+  z-index: 2;
 }
