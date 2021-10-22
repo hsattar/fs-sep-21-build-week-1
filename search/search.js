@@ -25,6 +25,7 @@ const callApi = () => {
                 }
     
                 response.json().then(function(data) {
+                    console.log(data)
                     searchResults(data)
                     displayResults(data)
                 })
@@ -47,9 +48,36 @@ const displayResults = (data) => {
     resultsContainer.innerHTML = ''
     let results = data.data
     results.forEach(result => {
-        const newSong = document.createElement('div')
-        newSong.innerHTML = `<p>${result.title}</p>`
-        resultsContainer.appendChild(newSong)
+        const resultsCard = document.createElement('div')
+        resultsCard.className = 'hp-subhero-card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 m-0'
+        resultsCard.innerHTML = `
+        <img src="${result.album.cover_small}" class="card-img-top pt-2 img-fluid" alt="...">
+        <div class="card-body">
+            <p class="hp-subhero-title">${result.title} - ${result.album.title}</p>
+            <p class="hp-subhero-subtitle">${result.artist.name}</p>
+        </div>`
+        resultsContainer.appendChild(resultsCard)
+        // playAudio(result)
+        resultsCard.addEventListener('click', () => {
+            const albumImg = document.getElementById('albumImg')
+            const songTitle = document.getElementById('songTitle')
+            const songArtist = document.getElementById('songArtist')
+            const musicPlay = document.getElementById('musicPlay')
+            albumImg.setAttribute('src', `${result.album.cover_small}`)
+            songTitle.innerText = `${result.title}`
+            songArtist.innerText = `${result.artist.name}`
+            musicPlay.setAttribute('src', `${result.preview}`)
+        })
     })
 }
+
+// const playAudio = (result) => {
+//     const playBtn = document.querySelectorAll('.buttoncard')
+//     playBtn.forEach(btn => {
+//         btn.addEventListener('click', () => {
+//             const musicPlayer = document.querySelector('#music-player')
+//             musicPlayer.setAttribute('src', `${result.preview}`)
+//         })
+//     })
+// }
 
