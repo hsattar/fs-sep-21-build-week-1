@@ -1,4 +1,15 @@
 /* ----------------------------------------------- GENERAL STYLING ----------------------------------------------- */
+@keyframes fade-out{
+  0%{
+    opacity: 1.0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity:0.0
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -375,6 +386,10 @@ button.btn.bg-black {
   border-radius: 300px;
 }
 
+.main-page-content{
+  animation: fade-out;
+  transition: opacity .3 ease-in-out;
+}
 .main-page-content,
 .side-bar {
   padding-bottom: 85px;
@@ -475,3 +490,5 @@ h3 {
   width: 60px;
   height: 48px;
 }
+
+
