@@ -407,3 +407,37 @@ const changeBackground = () => {
           )`
     }
 }
+
+
+// Music API control section 
+
+let audioElement = document.querySelector('.audio-play')
+
+let playButton = document.querySelector('.music-play-btn');
+let pauseButton = document.querySelector('.music-pause-btn');
+
+playButton.addEventListener("click", handlePlayButton, false);
+pauseButton.addEventListener("click", handlePlayButton, false)
+pauseButton.style.display = "none";
+async function playAudio(){
+  try {
+    await audioElement.play();
+    // playButton.classList.remove("bi bi-play-circle-fill");
+  } catch(err) {
+    // playButton.classList.remove("bi bi-play-circle-fill");
+  }
+}
+
+function handlePlayButton() {
+  if (audioElement.paused) {
+    playAudio();
+    pauseButton.style.display = "block";  
+    playButton.style.display = "none"
+  } else {
+    audioElement.pause();
+    playButton.style.display = "block"
+    pauseButton.style.display = "none";  
+  }
+}
+
+

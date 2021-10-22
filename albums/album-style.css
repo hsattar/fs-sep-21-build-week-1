@@ -108,3 +108,10 @@
 .album-controls {
   z-index: 2;
 }
+
+/* music API controls */
+
+.music-play-btn{
+  width: 60px;
+  height: 48px;
+}
