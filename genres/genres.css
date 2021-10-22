@@ -81,3 +81,7 @@ div.hp-card {
     min-width: fit-content;
     min-height: fit-content;
 }
+
+div h5.hp-card-title {
+    font-size: 1.4em;
+}
