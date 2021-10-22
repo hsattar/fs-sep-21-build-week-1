@@ -211,11 +211,14 @@ div.triangle-top-l {
 .good-morning-container .card-wrapper {
   background-color: var(--card-wrapper-bg);
   width: 100%;
+  transition: 0.3s ease-in-out;
 }
 
 .good-morning-container .card-wrapper:hover {
   border: 2px solid var(--light-green);
   cursor: pointer;
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
 }
 
 #toggle-theme {
@@ -273,6 +276,7 @@ button.btn.bg-black {
   margin: 2px;
   padding-left: 10px;
   padding-right: 10px;
+  transition: .4s ease-in-out;
 }
 
 .hp-subhero-title {
@@ -324,6 +328,7 @@ button.btn.bg-black {
   z-index: 3;
   background-color: var(--dark-gray);
   cursor: pointer;
+  transition: .4s ease-in-out;
 }
 
 #showstotry img {
