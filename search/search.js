@@ -2,6 +2,10 @@ const searchInput = document.querySelector('#song-search')
 // const searchQuery = searchInput.value
 const searchBtn = document.querySelector('#search-btn')
 
+window.onload = () => {
+    searchInput.focus()
+}
+
 searchInput.addEventListener('keyup', e => {
     if (e.keyCode === 13) {
         e.preventDefault()
@@ -46,6 +50,8 @@ const searchResults = (data) => {
 
 let playPauseBtnClicks = 0
 let currentSongTime = 0
+let isPaused = false
+let secondsPassed = 0
 
 const displayResults = (data) => {
     const resultsContainer = document.getElementById('show-results-container')
@@ -64,16 +70,16 @@ const displayResults = (data) => {
         </div>`
         resultsContainer.appendChild(resultsCard)
         resultsCard.addEventListener('click', () => {
+            currentSongTime = 0
+            secondsPassed = 0
             const albumImg = document.getElementById('albumImg')
             const songTitle = document.getElementById('songTitle')
             const songArtist = document.getElementById('songArtist')
             const musicPlay = document.getElementById('musicPlay')
             const playPauseBtn = document.getElementById('playPauseBtn')
-            const trackBar = document.querySelector('.track-bar').style
-            setInterval(() => {
-                currentSongTime += 10
-                trackBar.setProperty('--songTime', `${currentSongTime}px`)
-            }, 1000)
+            const refresh = document.getElementById('refresh')
+            const visibleTime = document.getElementById('visibleTime')
+            const trackBar = document.querySelector('.track-bar').style            
             albumImg.setAttribute('src', `${result.album.cover_small}`)
             songTitle.innerText = `${result.title}`
             songArtist.innerText = `${result.artist.name}`
@@ -84,11 +90,31 @@ const displayResults = (data) => {
                 if (playPauseBtnClicks % 2 === 0) {
                     musicPlay.play()
                     playPauseBtn.className = 'bi bi-pause-circle-fill mx-3'
+                    isPaused = false
                 } else {
                     musicPlay.pause()
                     playPauseBtn.className = 'bi bi-play-circle-fill mx-3'
+                    isPaused = true
                 }
             })
+            const updateTrackBar = setInterval(() => {
+                if (currentSongTime === 300) {
+                    clearInterval(updateTrackBar)
+                }
+                if (!isPaused) {
+                    currentSongTime += 10
+                    secondsPassed++
+                }
+                if (secondsPassed < 10) {
+                    visibleTime.innerText = `0:0${secondsPassed}`
+                } else {
+                    visibleTime.innerText = `0:${secondsPassed}`
+                }
+                trackBar.setProperty('--songTime', `${currentSongTime}px`)
+            }, 1000)
+            refresh.addEventListener('click', () => {
+                clearInterval(updateTrackBar)
+            })      
         })
     })
 }
