@@ -368,7 +368,8 @@ button.btn.bg-black {
   height: 50px;
 }
 
-.music-controls-section .bi-play-circle-fill {
+.music-controls-section .bi-play-circle-fill,
+.music-controls-section .bi-pause-circle-fill {
   font-size: 1.75rem;
 }
 
@@ -486,7 +487,7 @@ h3 {
   font-size: 50px;
 } */
 
-.music-play-btn{
+.music-play-btn {
   width: 60px;
   height: 48px;
 }
